@@ -28,7 +28,7 @@ export default function CCPage() {
     ];
 
     const features1 = [
-        { image: '/Private-Night-Club-large-004-7-Kitchen-1500x1000-72dpi.jpg', title: 'Kitchens', description: 'Indoor Kitchen: Equipped with 4 ovens, 2 microwaves, a dozen stove tops, multiple refrigerators, wine coolers, a double tap kegerator, ice machine, and multiple sinks Outdoor Kitchen: Includes 5-burner BBQs, an industrial work burner, huge 20 chicken rotisserie, and a 6-burner stove top' },
+        { image: '/Private-Night-Club-large-004-7-Kitchen-1500x1000-72dpi.jpg', title: 'BATH', description: 'Indoor Kitchen: Equipped with 4 ovens, 2 microwaves, a dozen stove tops, multiple refrigerators, wine coolers, a double tap kegerator, ice machine, and multiple sinks Outdoor Kitchen: Includes 5-burner BBQs, an industrial work burner, huge 20 chicken rotisserie, and a 6-burner stove top' },
         { image: '/Private-Night-Club-large-064-64-Dining-Room-1500x1000-72dpi.jpg', title: 'Dining and Entertainment Areas', description: 'Several large HD flat-screen TVs with cable and Netflix in every room and common areas Game room with ping pong and other games' },
         { image: '/Private-Night-Club-large-049-4-Pool-Bar-1500x1000-72dpi.jpg', title: 'Pool Area', description: 'Two pools, both of which can be heated Features include a double waterfall, slide, spa, swim-up bar, cave cabana, and submersible bar stools and table' }
     ];

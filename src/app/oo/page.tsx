@@ -28,7 +28,7 @@ export default function OOPage() {
     ];
 
     const features1 = [
-        { image: '/OO-Kitchen.jpg', title: 'Kitchens', description: 'Indoor Kitchen: Features 6 burners, 2 wall ovens, 2 long islands (each up to 10 feet), capable of serving over 20 guests Outdoor Kitchen: Full kitchen facilities adjacent to the resort pool' },
+        { image: '/OO-Kitchen.jpg', title: 'BATH', description: 'Indoor Kitchen: Features 6 burners, 2 wall ovens, 2 long islands (each up to 10 feet), capable of serving over 20 guests Outdoor Kitchen: Full kitchen facilities adjacent to the resort pool' },
         { image: '/backyard-5.jpg', title: 'Dining Areas', description: 'Includes a large living room, family room, dining room, breakfast area, and Center O Bar' },
         { image: '/OO-Pool-Area.jpg', title: 'Pool Area', description: 'Large resort pool with waterfalls, a grotto, swim-up bars, and a large jetted spa Hawaiian style Palapa shades Water mist and covered sunscreen' }
     ];

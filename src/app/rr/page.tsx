@@ -29,7 +29,7 @@ export default function RRPage() {
     ];
 
     const features1 = [
-        { image: '/2858-Red-Rock-St-Las-Vegas-NV-print-032-97-Kitchen-2700x1800-300dpi.jpg', title: 'Kitchens', description: 'Main Kitchen: Equipped with a 48” range, a 36” cooktop, 5 ovens, and two islands (20 feet and 15 feet long)Outdoor Kitchen: Includes cooking facilities for large events, a full kitchen with refrigerator, cook burners, hot plate, and a barbecue area' },
+        { image: '/2858-Red-Rock-St-Las-Vegas-NV-print-032-97-Kitchen-2700x1800-300dpi.jpg', title: 'BATH', description: 'Main Kitchen: Equipped with a 48” range, a 36” cooktop, 5 ovens, and two islands (20 feet and 15 feet long)Outdoor Kitchen: Includes cooking facilities for large events, a full kitchen with refrigerator, cook burners, hot plate, and a barbecue area' },
         { image: '/2858-Red-Rock-St-Las-Vegas-NV-print-021-37-Dining-Room-2700x1800-300dpi.jpg', title: 'Dining Areas', description: 'Large areas for breakfast, formal dining, and outdoor dining' },
         { image: '/2858-Red-Rock-St-Las-Vegas-NV-print-087-57-Exterior-Pool-2700x1800-300dpi.jpg', title: 'Entertainment Areas', description: 'Large resort pool with waterfalls, water slide, grotto, and swim-up bar Full basketball court and tennis court with additional lines for volleyball, badminton, and pickleball Children’s playground and large white sandbox' }
     ];

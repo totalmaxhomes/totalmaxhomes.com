@@ -29,7 +29,7 @@ export default function UUPage() {
     ];
 
     const features1 = [
-        { image: '/W8A0146-1.jpg', title: 'Kitchens', description: 'Main Kitchen: Equipped with 3 ovens, 2 microwaves, 8 stove tops, 3 large refrigerators, multiple sinks, 2 dishwashers Outdoor Kitchen: Includes a 5-burner BBQ, industrial work burner, huge 20 chicken rotisserie, and an industrial sink' },
+        { image: '/W8A0146-1.jpg', title: 'BATH', description: 'Main Kitchen: Equipped with 3 ovens, 2 microwaves, 8 stove tops, 3 large refrigerators, multiple sinks, 2 dishwashers Outdoor Kitchen: Includes a 5-burner BBQ, industrial work burner, huge 20 chicken rotisserie, and an industrial sink' },
         { image: '/W8A0166-2.jpg', title: 'Entertainment Areas', description: 'Karaoke Room Gaming Room: Football table, double-shot basketball ring, exercise running machine' },
         { image: '/W8A0046-1.jpg', title: 'Living Areas', description: 'Large HD flat-screen TVs linked to cable in bedrooms and common areas Common areas with multiple large TV sets' }
     ];

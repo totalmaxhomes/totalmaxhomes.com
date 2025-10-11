@@ -22,9 +22,9 @@ export default function DDPage() {
   const counters = [
     { title: 'BEDROOMS', value: 12 },
     { title: 'GUEST CAPACITY', value: 42 },
-    { title: 'KITCHENS', value: 13 },
+    { title: 'BATH', value: 13 },
     { title: 'LIVING AREA', value: 13000, suffix:'sq.ft' },
-        { title: 'LOT AREA', value: 38000, suffix:'sq.ft' }
+    { title: 'LOT AREA', value: 38000, suffix:'sq.ft' }
   ];
 
   const features1 = [
