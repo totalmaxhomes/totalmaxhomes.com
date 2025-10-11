@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import MathCaptcha from './MathCaptcha';
 
 const ContactForm: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [showThankYou, setShowThankYou] = useState(false);
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -59,6 +61,10 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!isCaptchaValid) {
+      alert('Please solve the math captcha correctly.');
+      return;
+    }
     const form = e.currentTarget as HTMLFormElement;
     if (form.checkValidity()) {
       try {
@@ -81,6 +87,7 @@ const ContactForm: React.FC = () => {
           });
           setCurrentPage(1);
           setShowThankYou(true);
+          setIsCaptchaValid(false);
           setTimeout(() => setShowThankYou(false), 10000);
         } else {
           console.error('Form submission failed');
@@ -265,6 +272,9 @@ const ContactForm: React.FC = () => {
                     </p>
                   </div>
                 </div>
+
+                {/* Math Captcha */}
+                <MathCaptcha onValidate={setIsCaptchaValid} />
 
                 <div className="flex justify-center gap-4 ">
                   <button

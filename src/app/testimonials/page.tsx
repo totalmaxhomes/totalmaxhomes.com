@@ -68,13 +68,35 @@ export default function TestimonialsPage() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!isCaptchaValid) {
       alert('Please solve the math captcha correctly.');
       return;
     }
-    console.log('Form submitted:', formData);
+    try {
+      const response = await fetch('/api/testimonials', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      if (response.ok) {
+        alert('Thank you for your testimonial!');
+        setFormData({
+          name: '',
+          mansion: 'D&D Mansion',
+          testimony: '',
+        });
+        setIsCaptchaValid(false);
+      } else {
+        alert('Failed to submit testimonial. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting testimonial:', error);
+      alert('Network error. Please try again.');
+    }
   };
 
   const currentTab = transformedTestimonialsData.find((tab) => tab.id === activeTab);
