@@ -3,6 +3,15 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
+type MansionData = {
+    id: 'oo' | 'ee' | 'cc' | 'uu' | 'rr';
+    reverse: boolean;
+    title: string;
+    heading: string;
+    images: string[];
+    paragraphs: string[];
+};
+
 export default function MansionsPage() {
     return (
         <>
@@ -24,22 +33,6 @@ export default function MansionsPage() {
 
                 {/* Mansion Reusable Section */}
                 {[
-                    {
-                        id: 'dd',
-                        reverse: true,
-                        title: 'The D&D Mansion',
-                        heading: 'Dreams & Desires Mansion',
-                        images: [
-                            '/Dreams-Desires-Mansion-1.jpg',
-                            '/Dreams-Desires-Mansion-2.jpg',
-                            '/Dreams-Desires-Mansion-3.jpg',
-                        ],
-                        paragraphs: [
-                            'Experience the grandeur of ancient Rome at the D&D Mansion in Las Vegas! Indulge in the elegance of Roman mythology, relax like royalty in tranquil waters, and enjoy a quintessential Venetian ambiance with modern amenities.',
-                            'This world-class resort features superb water attractions, including waterfalls, a grotto, swim-up bars, and Hawaiian Palapa shades, all surrounded by palm trees for a touch of tropical paradise. Wander through the private Chinese garden with authentic Taihu stones, picturesque bridges, and a koi pond for stunning Instagram moments.',
-                            'With accommodations for up to 39 guests, a dozen bedrooms and bathrooms, multiple 5-star kitchens, and a 3000-bottle wine cellar, the D&D Mansion is perfect for both work and leisure, offering luxurious living with a blend of Roman, Italian, Hawaiian, and Oriental influences.',
-                        ],
-                    },
                     {
                         id: 'oo',
                         reverse: false,
@@ -160,7 +153,7 @@ export default function MansionsPage() {
                                 {/* Buttons */}
                                 <div className="flex flex-wrap justify-center md:justify-start gap-4">
                                     <Link
-                                        href={`/${mansion.id}`}
+                                        href={`/${mansion.id}` as `/${'oo' | 'ee' | 'cc' | 'uu' | 'rr'}`}
                                         className="bg-[#C19B77] text-white px-4 py-2 rounded hover:bg-[#b08968] transition"
                                     >
                                         View Details
