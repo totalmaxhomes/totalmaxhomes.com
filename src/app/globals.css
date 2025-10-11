@@ -1,0 +1,330 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-playfair: var(--font-playfair-display);
+  --font-roboto: var(--font-roboto);
+  --font-montserrat: var(--font-montserrat);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+}
+
+/* Headings and Navigation - All headings and menu text use Playfair Display */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading,
+.title,
+.subtitle,
+.menu,
+.nav,
+.navigation,
+.menu-item,
+.nav-item,
+.dropdown-item,
+.menu-link,
+.nav-link {
+  font-family: var(--font-playfair-display), serif;
+}
+
+/* Navigation links - comprehensive coverage */
+nav a,
+.navbar a,
+.nav a,
+.menu a,
+.navigation a,
+.menu-item a,
+.nav-item a,
+.dropdown a,
+.dropdown-item a {
+  font-family: var(--font-playfair-display), serif;
+}
+
+/* Button text in navigation */
+.navbar button,
+.nav button,
+.menu button {
+  font-family: var(--font-playfair-display), serif;
+}
+
+/* Specific Navigation Menu Styling - Desktop Navigation */
+.sticky nav a,
+.sticky .navbar a,
+nav.hidden a,
+.navbar a {
+  font-family: "Playfair Display", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: normal !important;
+  line-height: 1em !important;
+  letter-spacing: 2px !important;
+  color: #1D1D1D !important;
+  text-transform: uppercase !important;
+}
+
+
+
+
+
+/* ✅ Google Translate dropdown styled with Tailwind */
+#google_translate_element select {
+  @apply h-7 text-xs px-2 py-1 rounded border border-gray-300;
+}
+
+/* Force Powered by Google Translate into a single line */
+/* .skiptranslate {
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center;
+  font-size: 12px !important;
+} */
+
+/* Target the "Powered by" wrapper */
+.skiptranslate span {
+  display: inline-flex !important;
+  align-items: center;
+  white-space: nowrap !important;
+}
+
+/* Target the Google logo */
+.skiptranslate img {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-right: 3px;
+}
+
+/* Custom white arrows for Swiper carousel */
+.custom-swiper .swiper-button-prev,
+.custom-swiper .swiper-button-next {
+  color: white !important;
+  font-weight: 700;
+  /* makes it bold */
+  transform: scale(0.7);
+  /* smaller size (70% of original) */
+  transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-button-prev:hover,
+.custom-swiper .swiper-button-next:hover {
+  color: #ffffff !important;
+  /* hover pe gold shade */
+  transform: scale(0.8);
+  /* thoda bada hover pe */
+}
+
+/* Custom animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out;
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out;
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  70% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.6s ease-out;
+}
+
+
+/* Mansion Slider Styles */
+.mansion-slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.mansion-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  cursor: grab;
+}
+
+.mansion-slider:active {
+  cursor: grabbing;
+}
+
+.mansion-column {
+  flex: 0 0 calc(100% / 3);
+  /* 3 columns visible: since 4 columns with first/last half = 3 full widths */
+  min-width: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+}
+
+.mansion-item {
+  width: 100%;
+}
+
+.mansion-slide-item {
+  height: 150px;
+  /* Increased height */
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: #e2e8f0;
+  /* Light gray background for loading */
+}
+
+.mansion-slide-text {
+  height: 150px;
+  background-color: #1f2937;
+  /* bg-gray-800 */
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mansion-slide-text h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.mansion-slide-text p {
+  font-size: 0.75rem;
+  color: #d1d5db;
+  /* text-gray-300 */
+}
+
+/* Mansion Slider Grid Styles */
+.grid-container {
+  @apply grid grid-rows-[400px_400px] grid-flow-col gap-2.5 p-5 max-w-[1800px] mx-auto overflow-x-auto overflow-y-hidden scroll-smooth;
+}
+
+.grid-item {
+  @apply h-[400px] bg-cover bg-center flex items-center justify-center text-white text-xl text-center overflow-hidden;
+  min-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .grid-item {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-item {
+    min-width: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid-item {
+    min-width: 610px;
+  }
+}
+
+.text-item {
+  @apply bg-gray-600 p-2.5 text-white box-border;
+}
+
+.beige-item {
+  @apply bg-[#d7c4a9] text-black;
+}
+
+.text-content {
+  @apply max-h-full overflow-hidden break-words;
+}
+
+.draggable {
+  @apply cursor-grab;
+}
+
+.draggable:active {
+  @apply cursor-grabbing;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
