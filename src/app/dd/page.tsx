@@ -21,8 +21,8 @@ export default function DDPage() {
 
   const counters = [
     { title: 'BEDROOMS', value: 12 },
+    { title: 'BATHROOMS', value: 13 },
     { title: 'GUEST CAPACITY', value: 42 },
-    { title: 'BATH', value: 13 },
     { title: 'LIVING AREA', value: 13000, suffix:'sq.ft' },
     { title: 'LOT AREA', value: 38000, suffix:'sq.ft' }
   ];

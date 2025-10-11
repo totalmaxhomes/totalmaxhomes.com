@@ -21,10 +21,10 @@ export default function EEPage() {
 
     const counters = [
         { title: 'BEDROOMS', value: 7 },
+        { title: 'BATHROOMS', value: 5 },
         { title: 'GUEST CAPACITY', value: 26 },
-        { title: 'BATHS', value: 5 },
         { title: 'LIVING AREA', value: 4000, suffix:'sq.ft' },
-        { title: 'LOT AREA', value: 25000, suffix:'sq.ft' } 
+        { title: 'LOT AREA', value: 25000, suffix:'sq.ft' }
     ];
 
     const features1 = [

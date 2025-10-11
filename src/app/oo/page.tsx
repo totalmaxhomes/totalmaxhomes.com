@@ -21,8 +21,8 @@ export default function OOPage() {
 
     const counters = [
         { title: 'BEDROOMS', value: 9 },
+        { title: 'BATHROOMS', value: 8 },
         { title: 'GUEST CAPACITY', value: 33 },
-        { title: 'BATHS', value: 8 },
         { title: 'LIVING AREA', value: 6000, suffix:'sq.ft' },
         { title: 'LOT AREA', value: 26000, suffix:'sq.ft' }
     ];

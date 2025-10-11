@@ -21,10 +21,10 @@ export default function CCPage() {
 
     const counters = [
         { title: 'BEDROOMS', value: 9 },
+        { title: 'BATHROOMS', value: 8 },
         { title: 'GUEST CAPACITY', value: 31 },
-        { title: 'BATHS', value: 8 },
         { title: 'LIVING AREA', value: 6300, suffix:'sq.ft' },
-        { title: 'LOT AREA', value: 24000, suffix:'sq.ft' } 
+        { title: 'LOT AREA', value: 24000, suffix:'sq.ft' }
     ];
 
     const features1 = [

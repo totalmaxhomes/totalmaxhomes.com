@@ -22,10 +22,10 @@ export default function UUPage() {
 
     const counters = [
         { title: 'BEDROOMS', value: 8 },
+        { title: 'BATHROOMS', value: 8 },
         { title: 'GUEST CAPACITY', value: 24 },
-        { title: 'BATHS', value: 8 },
         { title: 'LIVING AREA', value: 4300, suffix:'sq.ft' },
-        { title: 'LOT AREA', value: 25000, suffix:'sq.ft' } 
+        { title: 'LOT AREA', value: 25000, suffix:'sq.ft' }
     ];
 
     const features1 = [

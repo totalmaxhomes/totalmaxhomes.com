@@ -22,8 +22,8 @@ export default function RRPage() {
 
     const counters = [
         { title: 'BEDROOMS', value: 12 },
+        { title: 'BATHROOMS', value: 12 },
         { title: 'GUEST CAPACITY', value: 48 },
-        { title: 'BATHS', value: 12 },
         { title: 'LIVING AREA', value: 7158, suffix:'sq.ft' },
         { title: 'LOT AREA', value: 30000, suffix:'sq.ft' }
     ];
