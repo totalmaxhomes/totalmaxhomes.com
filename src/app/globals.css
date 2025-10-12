@@ -21,6 +21,8 @@
 }
 
 body {
+    top: 0px !important;
+
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
@@ -327,4 +329,20 @@ nav.hidden a,
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+/* 
+.skiptranslate {
+  display: none !important;
+
+} */
+
+.skiptranslate,
+.goog-te-banner-frame,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Optional: prevent spacing shift when translate banner tries to push down */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
 }

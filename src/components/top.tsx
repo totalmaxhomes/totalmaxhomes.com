@@ -137,22 +137,7 @@ declare global {
 
 export default function TopBar() {
   useEffect(() => {
-    if (!document.querySelector('script[src*="translate.google.com"]')) {
-      const script = document.createElement("script");
-      script.src =
-        "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-
-    if (!window.googleTranslateElementInit) {
-      window.googleTranslateElementInit = () => {
-        new window.google.translate.TranslateElement(
-          { pageLanguage: "en" },
-          "google_translate_element"
-        );
-      };
-    }
+    // Google Translate is now handled by TranslationWidget
   }, []);
 
   return (

@@ -55,11 +55,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Translate API */}
-        <script
-          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          async
-        />
       </head>
       <body className={`${playfairDisplay.variable} ${roboto.variable} ${montserrat.variable} antialiased`}>
         <TopBar />
