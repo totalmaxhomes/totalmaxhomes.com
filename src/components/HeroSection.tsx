@@ -2,23 +2,21 @@
 
 import { useEffect, useState, useRef } from "react";
 
-const useTypingEffect = (text: string, speed: number = 100) => {
-  const [displayText, setDisplayText] = useState(text); // Start with full text
-  const [isTyping, setIsTyping] = useState(false);
-  const [hasTyped, setHasTyped] = useState(true); // Already typed
+const useTypingEffect = (text: string) => {
+  const [displayText] = useState(text); // Start with full text
 
   const startTyping = () => {
     // No typing effect
   };
 
-  return { displayText, isTyping, startTyping };
+  return { displayText, startTyping };
 };
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
   const titleRef = useRef<HTMLDivElement>(null);
   const fullText = "Extraordinary Las Vegas Luxury Vacation Rentals";
-  const { displayText, isTyping, startTyping } = useTypingEffect(fullText, 80);
+  const { displayText, startTyping } = useTypingEffect(fullText);
 
   useEffect(() => {
     setTimeout(() => setMounted(true), 100);

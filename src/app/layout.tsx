@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Playfair_Display, Roboto, Montserrat } from "next/font/google";
 import "./globals.css";
 import TopBar from "@/components/top";
-import TranslationWidget from "@/components/TranslationWidget";
 import { Analytics } from "@vercel/analytics/next"
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",

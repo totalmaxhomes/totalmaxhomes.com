@@ -3,14 +3,6 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-type MansionData = {
-    id: 'oo' | 'ee' | 'cc' | 'uu' | 'rr';
-    reverse: boolean;
-    title: string;
-    heading: string;
-    images: string[];
-    paragraphs: string[];
-};
 
 export default function MansionsPage() {
     return (
@@ -129,7 +121,7 @@ export default function MansionsPage() {
                             'The kitchen is equipped with high-end appliances and an outdoor kitchen with a BBQ and rotisserie. Enjoy a heated pool, four courtyards, and a game room. The U & U Mansion by TotalMax Homes offers luxurious comfort for your ultimate vacation.',
                         ],
                     },
-                ].map((mansion, index) => (
+                ].map((mansion) => (
                     <section
                         key={mansion.id}
                         className={`relative w-full py-12 bg-cover bg-center`}

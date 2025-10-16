@@ -17,7 +17,6 @@ const MansionSlider: React.FC<{ mansions: Mansion[] }> = ({ mansions }) => {
   const [scrollPositionMd, setScrollPositionMd] = useState(0);
 
   const itemWidth = 610;
-  const visibleItems = 3;
   const scrollStep = itemWidth;
   const autoScrollInterval = 3000;
 
@@ -71,7 +70,7 @@ const MansionSlider: React.FC<{ mansions: Mansion[] }> = ({ mansions }) => {
       }
     }, autoScrollInterval);
     return () => clearInterval(interval);
-  }, [isDraggingMd]);
+  }, [isDraggingMd, scrollStep]);
 
   // Update scrollLeft for md when scrollPositionMd changes
   useEffect(() => {

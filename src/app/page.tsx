@@ -1,7 +1,6 @@
 import LatestBlogs from "@/components/Blogs";
 import BookMansionSection from "@/components/BookMansionSection";
 import FeaturesSection from "@/components/Cards";
-import FeaturedMansion from "@/components/FeaturedMansions";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import InquiryForm from "@/components/InquiryForm";

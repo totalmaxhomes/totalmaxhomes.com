@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
     } else {
       return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
     }
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }

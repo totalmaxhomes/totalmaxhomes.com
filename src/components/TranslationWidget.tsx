@@ -18,8 +18,25 @@ const LANGUAGES: Language[] = [
   { code: "es", name: "Spanish", flag: "🇪🇸" },
 ];
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-declare const google: any;
+// Type declarations for Google Translate
+declare global {
+  interface Window {
+    googleTranslateElementInit?: () => void;
+  }
+}
+
+declare const google: {
+  translate: {
+    TranslateElement: new (
+      config: {
+        pageLanguage: string;
+        includedLanguages: string;
+        autoDisplay: boolean;
+      },
+      elementId: string
+    ) => unknown;
+  };
+};
 
 export default function TranslationWidget() {
   const pathname = usePathname();
@@ -47,7 +64,7 @@ useEffect(() => {
     setCurrentLang(saved);
 
     // ✅ Define callback before script loads
-    (window as any).googleTranslateElementInit = () => {
+    window.googleTranslateElementInit = () => {
       new google.translate.TranslateElement(
         {
           pageLanguage: "en",
@@ -69,7 +86,7 @@ useEffect(() => {
         "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
       document.head.appendChild(s);
     } else if (typeof google !== "undefined") {
-      (window as any).googleTranslateElementInit();
+      window.googleTranslateElementInit();
     }
 
     // ✅ Hide Google’s default bar
@@ -89,7 +106,7 @@ useEffect(() => {
     if (isReady && currentLang !== "en") {
       setTimeout(() => triggerLanguage(currentLang), 800);
     }
-  }, [pathname, isReady]);
+  }, [pathname, isReady, currentLang]);
 
   /** 
    * ✅ Function to trigger language change 
@@ -145,22 +162,6 @@ useEffect(() => {
     setTimeout(() => triggerLanguage(lang), 600);
   };
 
-  const getLangDisplayName = (code: string): string => {
-    switch (code) {
-      case "zh-CN":
-        return "chinese";
-      case "fr":
-        return "french";
-      case "ja":
-        return "japanese";
-      case "ko":
-        return "korean";
-      case "es":
-        return "spanish";
-      default:
-        return "english";
-    }
-  };
 
   const langObj =
     LANGUAGES.find((l) => l.code === currentLang) || LANGUAGES[0];

@@ -7,7 +7,6 @@ import MansionTitle from '@/components/MansionTitle';
 import MansionFeatures from '@/components/MansionFeatures';
 import MansionBookNow from '@/components/MansionBookNow';
 import MansionGallery from '@/components/MansionGallery';
-import MansionVirtualTour from '@/components/MansionVirtualTour';
 import galleriesData from '@/data/galleries.json';
 import { GalleryTab, GalleryImage } from '@/types/mansion';
 
@@ -39,15 +38,6 @@ export default function CCPage() {
         { image: '/W8A0516.jpg', title: 'Transportation', description: 'Just $10 for an Uber ride from the strip' }
     ];
 
-    const videos = [
-        "https://www.youtube.com/embed/4948VwRxq8o",
-        "https://www.youtube.com/embed/VADmasTSCdg",
-        "https://www.youtube.com/embed/oEFC7f3NsC8",
-        "https://www.youtube.com/embed/8BmX4hUAwAc",
-        "https://www.youtube.com/embed/XqYsNaZtDlE",
-        "https://www.youtube.com/embed/ESucJDLUFl8",
-        "https://www.youtube.com/embed/ZUbA83jSTCE"
-    ]
 
     return (
         <>

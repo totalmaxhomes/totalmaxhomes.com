@@ -119,21 +119,8 @@ import {
   FaYoutube,
   FaLinkedin,
 } from "react-icons/fa6";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import TranslationWidget from "./TranslationWidget";
+import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
-interface GoogleTranslate {
-  translate: {
-    TranslateElement: new (config: { pageLanguage: string }, element: string) => void;
-  };
-}
-
-declare global {
-  interface Window {
-    googleTranslateElementInit: () => void;
-    google: GoogleTranslate;
-  }
-}
 
 export default function TopBar() {
   useEffect(() => {
