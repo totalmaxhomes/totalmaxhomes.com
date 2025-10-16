@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,25 +16,16 @@ export async function POST(request: NextRequest) {
       <p><strong>Guests:</strong> ${guests}</p>
     `;
 
-    const response = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`
-      },
-      body: JSON.stringify({
-        from: 'admin@totalmaxhomes.com',
-        to: 'inquiry@totalmaxhomes.com',
-        subject: 'New Inquiry from Website',
-        html: emailBody.replace(/\n/g, '<br>')
-      })
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
+    await resend.emails.send({
+      from: 'admin@totalmaxhomes.com',
+      to: ['inquiry@totalmaxhomes.com'],
+      subject: 'New Inquiry from Website',
+      html: emailBody.replace(/\n/g, '<br>')
     });
 
-    if (response.ok) {
-      return NextResponse.json({ success: true });
-    } else {
-      return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
-    }
+    return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
