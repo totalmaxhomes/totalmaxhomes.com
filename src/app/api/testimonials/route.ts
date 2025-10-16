@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
         'Authorization': `Bearer ${process.env.RESEND_API_KEY}`
       },
       body: JSON.stringify({
-        from: 'testimonials@totalmaxhomes.com',
+        from: 'admin@totalmaxhomes.com',
         to: 'inquiry@totalmaxhomes.com',
         subject: 'New Testimonial from Website',
         html: emailBody
