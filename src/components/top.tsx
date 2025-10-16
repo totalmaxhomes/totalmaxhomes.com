@@ -177,13 +177,13 @@ export default function TopBar() {
           id="google_translate_element"
           className="flex items-center justify-center bg-white rounded px-2 py-0.5 text-black text-xs my-1 sm:my-0"
         /> */}
-        <TranslationWidget />
+        {/* <TranslationWidget /> */}
 
         {/* Right Column */}
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-white/90 text-xs sm:text-sm">
           <div className="flex items-center gap-1 sm:gap-2">
             <FaPhoneAlt className="text-white/80" />
-            <a href="tel:7025926888" className="font-medium text-xs sm:text-sm">
+            <a href="tel:+17025926888" className="font-medium text-xs sm:text-sm">
               702-592-6888
             </a>
           </div>

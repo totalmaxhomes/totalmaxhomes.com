@@ -34,6 +34,22 @@ export default function MansionsPage() {
                 {/* Mansion Reusable Section */}
                 {[
                     {
+                        id: 'dd',
+                        reverse: true,
+                        title: 'The D&D Mansion',
+                        heading: 'Dreams & Desires Mansion',
+                        images: [
+                            '/Dreams-Desires-Mansion-1.jpg',
+                            '/Dreams-Desires-Mansion-2.jpg',
+                            '/Dreams-Desires-Mansion-3.jpg',
+                        ],
+                        paragraphs: [
+                            'Experience the grandeur of ancient Rome at the D&D Mansion in Las Vegas! Indulge in the elegance of Roman mythology, relax like royalty in tranquil waters, and enjoy a quintessential Venetian ambiance with modern amenities.',
+                            'This world-class resort features superb water attractions, including waterfalls, a grotto, swim-up bars, and Hawaiian Palapa shades, all surrounded by palm trees for a touch of tropical paradise. Wander through the private Chinese garden with authentic Taihu stones, picturesque bridges, and a koi pond for stunning Instagram moments.',
+                            'With accommodations for up to 39 guests, a dozen bedrooms and bathrooms, multiple 5-star kitchens, and a 3000-bottle wine cellar, the D&D Mansion is perfect for both work and leisure, offering luxurious living with a blend of Roman, Italian, Hawaiian, and Oriental influences.',
+                        ],
+                    },
+                    {
                         id: 'oo',
                         reverse: false,
                         title: 'The O&O Mansion',
@@ -136,9 +152,8 @@ export default function MansionsPage() {
                                             alt={`${mansion.heading} ${i + 1}`}
                                             width={1152}
                                             height={768}
-                                            className={`w-full h-auto rounded-lg ${
-                                                i === 2 ? 'xl:col-span-2' : ''
-                                            }`}
+                                            className={`w-full h-auto rounded-lg ${i === 2 ? 'xl:col-span-2' : ''
+                                                }`}
                                         />
                                     ))}
                                 </div>
