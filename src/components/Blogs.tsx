@@ -9,7 +9,7 @@ const blogs = [
         date: "2 July",
         excerpt:
             "TotalMax Homes Proudly Announces Gary “The Texan” Wu’s Prestigious Recognition We are thrilled to announce that Gary Wu, Founder and CEO of TotalMax Homes LLC, has been honored with induction into the esteemed Passion Vista Hall of Fame 2024. This recognition is featured in Passion Vista, a renowned Luxury, Lifestyle, and Business Magazine, which celebrates […]",
-        image: "/img11.jpg",
+        image: "/gary-wu-hall-of-fame-celebration.jpg",
         link: "celebrating-gary-wus-induction-into-the-passion-vista-hall-of-fame-2024",
     },
     {
@@ -18,7 +18,7 @@ const blogs = [
         date: "1 July",
         excerpt:
             "In 2024, the business world has seen the rise and consolidation of leaders who are not just steering their enterprises to new heights but are also redefining the parameters of leadership itself. Among these influential figures is Gary Wu, the Founder and CEO of TotalMax Homes, who has been rightfully recognized in the exclusive list […]",
-        image: "/8Ndtvjzx.jpeg",
+        image: "/gary-wu-trailblazers-business-leader.jpg",
         link: "trailblazing-titans-of-industry-spotlight-on-gary-wu",
     },
     {
@@ -36,7 +36,7 @@ const blogs = [
         date: "28 June",
         excerpt:
             "Gary Wu, the visionary owner of TotalMax Homes and renowned as “The Texan,” recently graced the pages of the Real Las Vegas Magazine Summer edition, offering profound insights into the transformative dynamics of Las Vegas’s economy. His keynote speech at the CX2.0 conference in March not only highlighted his personal achievements but also shed light […]",
-        image: "/iStock-1383478451.jpg",
+        image: "/las-vegas-economy-business-landscape.jpg",
         link: "embracing-change-gary-wu-and-the-evolution-of-las-vegas/",
     },
     {
@@ -45,7 +45,7 @@ const blogs = [
         date: "13 June",
         excerpt:
             "Vibrant Evenings with Professional Bartenders and DJs Animate your evenings with our professional bartenders who can craft the perfect cocktail to suit any occasion. Complement the night with our DJs, who can set the mood with music that matches the high energy and luxury of Las Vegas. Unique Entertainment with Magicians, Mermaids, and More Transform […]",
-        image: "/Hero-Image.jpg",
+        image: "/hero-image-luxury-vacation-rentals-las-vegas.jpg",
         link: "experience-unmatched-luxury-with-totalmax-homes-full-service-add-ons",
     },
     {
@@ -54,7 +54,7 @@ const blogs = [
         date: "25 March",
         excerpt:
             "TotalMax Homes – Extraordinary Las Vegas Luxury Vacation Rentals You have found World’s Best Luxury Vacation Rentals located in Fabulous Las Vegas. Our “Las Hawaii” vacation rental mansions are marvel to look at, and even more amazing when you stay with us. Our vacation rentals homes are equipped with all the amenities to provide you […]",
-        image: "/iStock-1383478451.jpg",
+        image: "/las-vegas-economy-business-landscape.jpg",
         link: "totalmax-homes",
     },
 ];
@@ -92,7 +92,7 @@ export default function LatestBlogs({ limit = 3 }: LatestBlogsProps) {
             className={`relative bg-cover py-20 bg-center transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
-            style={{ backgroundImage: "url('/bg5.jpg')" }}
+            style={{ backgroundImage: "url('/background-5-luxury-mansion-las-vegas.jpg')" }}
         >
             <div className="max-w-7xl mx-auto text-center px-4 xl:px-12">
                 <h5 className="text-xs uppercase tracking-[4px] text-[#C19B77] mb-6">

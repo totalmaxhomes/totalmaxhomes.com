@@ -44,7 +44,7 @@ const BlogSection = () => {
 
             <section
                 className="relative w-full mx-auto my-0 "
-                style={{ backgroundImage: `url("/bg5.jpg"})` }}
+                style={{ backgroundImage: `url("/background-5-luxury-mansion-las-vegas.jpg")` }}
             >
                 {/* Background Overlay */}
                 {/* <div className="absolute inset-0 bg-black bg-opacity-20"></div> */}

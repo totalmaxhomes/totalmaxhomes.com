@@ -35,7 +35,7 @@ function Solutions() {
                     className="border my-8 shadow-2xl max-w-7xl bg-cover bg-center bg-no-repeat relative px-4 md:px-6 lg:px-12 py-8"
                     style={{
                         backgroundImage:
-                            "url('/bg5.jpg')",
+                            "url('/background-5-luxury-mansion-las-vegas.jpg')",
                     }}
                 >
                     <div className="bg-white/5 absolute inset-0"></div> {/* overlay */}
@@ -114,7 +114,7 @@ function Solutions() {
                     className="border my-8 shadow-2xl max-w-7xl bg-cover bg-center bg-no-repeat relative px-4 md:px-6 lg:px-12 py-8"
                     style={{
                         backgroundImage:
-                            "url('/bg5.jpg')",
+                            "url('/background-5-luxury-mansion-las-vegas.jpg')",
                     }}
                 >
                     <div className="bg-white/5 absolute inset-0"></div> {/* overlay */}
@@ -227,7 +227,7 @@ function Solutions() {
                     className="border my-8 shadow-2xl max-w-7xl bg-cover bg-center bg-no-repeat relative px-4 md:px-6 lg:px-12 py-8"
                     style={{
                         backgroundImage:
-                            "url('/bg5.jpg')",
+                            "url('/background-5-luxury-mansion-las-vegas.jpg')",
                     }}
                 >
                     <div className="bg-white/5 absolute inset-0"></div> {/* overlay */}

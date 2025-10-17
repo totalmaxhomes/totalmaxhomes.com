@@ -46,7 +46,7 @@ export default function HeroSection() {
       className="relative bg-cover bg-center pt-24 pb-12 h-[700px] flex items-center overflow-hidden"
       style={{
         backgroundImage:
-          "url('/Hero-Image.jpg')",
+          "url('/hero-image-luxury-vacation-rentals-las-vegas.jpg')",
       }}
     >
       {/* Overlay */}

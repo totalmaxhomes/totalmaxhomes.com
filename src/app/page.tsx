@@ -14,18 +14,18 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "TotalMax Homes - Luxury Vacation Rentals in Las Vegas",
-  description: "Experience extraordinary luxury vacation rentals in Las Vegas with TotalMax Homes. Discover our exclusive mansions for the perfect blend of comfort and entertainment.",
+  description: "Welcome to TotalMax Homes! Discover the world's best luxury vacation rentals in Las Vegas with TotalMax Homes' \"Las Hawaii\" mansions.",
   openGraph: {
     title: "TotalMax Homes - Luxury Vacation Rentals in Las Vegas",
-    description: "Experience extraordinary luxury vacation rentals in Las Vegas with TotalMax Homes. Discover our exclusive mansions for the perfect blend of comfort and entertainment.",
+    description: "Welcome to TotalMax Homes! Discover the world's best luxury vacation rentals in Las Vegas with TotalMax Homes' \"Las Hawaii\" mansions.",
     url: "https://www.totalmaxhomes.com",
     siteName: "TotalMax Homes",
     images: [
       {
-        url: "https://www.totalmaxhomes.com/Hero-Image.jpg",
+        url: "https://www.totalmaxhomes.com/hero-image-luxury-vacation-rentals-las-vegas.jpg",
         width: 1200,
         height: 630,
-        alt: "TotalMax Homes Hero Image",
+        alt: "Luxury vacation rentals in Las Vegas with TotalMax Homes",
       },
     ],
     locale: "en_US",
