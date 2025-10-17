@@ -1,28 +1,6 @@
 "use client";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Privacy Policy - TotalMax Homes',
-  description: 'Read TotalMax Homes privacy policy to understand how we collect, use, and protect your personal information.',
-  openGraph: {
-    title: 'Privacy Policy - TotalMax Homes',
-    description: 'Read TotalMax Homes privacy policy to understand how we collect, use, and protect your personal information.',
-    url: 'https://www.totalmaxhomes.com/privacy-policy',
-    siteName: 'TotalMax Homes',
-    images: [
-      {
-        url: 'https://www.totalmaxhomes.com/parallax-8.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'TotalMax Homes Privacy Policy',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-};
 
 export default function PrivacyPolicy() {
   return (

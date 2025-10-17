@@ -9,12 +9,6 @@ import Footer from '@/components/Footer';
 import MathCaptcha from '@/components/MathCaptcha';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Testimonials - TotalMax Homes',
-  description: 'Read testimonials from satisfied guests at TotalMax Homes luxury mansions in Las Vegas. Experience the best in vacation rentals.',
-}
 
 interface Testimonial {
   content: string;
