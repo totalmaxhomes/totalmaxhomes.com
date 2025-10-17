@@ -16,8 +16,8 @@ export default function NotFound() {
 
         {/* Description */}
         <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Oops! The page you're looking for seems to have vanished into the Las Vegas desert.
-          Don't worry, our luxury mansions are still here waiting for you.
+          Oops! The page you&apos;re looking for seems to have vanished into the Las Vegas desert.
+          Don&apos;t worry, our luxury mansions are still here waiting for you.
         </p>
 
         {/* Action Buttons */}
