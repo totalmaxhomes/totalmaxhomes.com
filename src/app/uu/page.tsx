@@ -10,6 +10,28 @@ import MansionGallery from '@/components/MansionGallery';
 import MansionVirtualTour from '@/components/MansionVirtualTour';
 import galleriesData from '@/data/galleries.json';
 import { GalleryTab, GalleryImage } from '@/types/mansion';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ultimate Utopia Mansion - TotalMax Homes',
+  description: 'Welcome to the Ultimate Utopia Mansion with traditional Chinese art, hand-painted designs, and luxurious amenities in Las Vegas.',
+  openGraph: {
+    title: 'Ultimate Utopia Mansion - TotalMax Homes',
+    description: 'Welcome to the Ultimate Utopia Mansion with traditional Chinese art, hand-painted designs, and luxurious amenities in Las Vegas.',
+    url: 'https://www.totalmaxhomes.com/uu',
+    siteName: 'TotalMax Homes',
+    images: [
+      {
+        url: 'https://www.totalmaxhomes.com/W8A0111-2.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Ultimate Utopia Mansion',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function UUPage() {
 

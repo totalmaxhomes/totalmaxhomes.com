@@ -1,6 +1,12 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React from 'react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Solutions - TotalMax Homes',
+  description: 'Discover TotalMax Homes solutions for filming, event hosting, and luxury accommodations in Las Vegas. Perfect for conventions, exhibitions, and special events.',
+}
 
 function Solutions() {
     return (

@@ -10,6 +10,28 @@ import MansionGallery from '@/components/MansionGallery';
 import MansionVirtualTour from '@/components/MansionVirtualTour';
 import galleriesData from '@/data/galleries.json';
 import { GalleryTab, GalleryImage } from '@/types/mansion';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Oasis Oakey Mansion - TotalMax Homes',
+  description: 'Experience the Oasis Oakey Mansion with 30-foot-high ceilings, colorful glass murals, and Italian-inspired architecture in Las Vegas.',
+  openGraph: {
+    title: 'Oasis Oakey Mansion - TotalMax Homes',
+    description: 'Experience the Oasis Oakey Mansion with 30-foot-high ceilings, colorful glass murals, and Italian-inspired architecture in Las Vegas.',
+    url: 'https://www.totalmaxhomes.com/oo',
+    siteName: 'TotalMax Homes',
+    images: [
+      {
+        url: 'https://www.totalmaxhomes.com/family-room-4.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Oasis Oakey Mansion',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function OOPage() {
 

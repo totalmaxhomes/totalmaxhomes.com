@@ -4,6 +4,12 @@ import React from 'react'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import { mansions } from '@/data/mansion'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us - TotalMax Homes',
+  description: 'Learn about TotalMax Homes, a leading provider of luxury vacation rentals in Las Vegas. Discover our mission, vision, and commitment to exceptional experiences.',
+}
 
 function About() {
     return (

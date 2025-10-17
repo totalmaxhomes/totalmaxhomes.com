@@ -10,6 +10,28 @@ import MansionGallery from '@/components/MansionGallery';
 import MansionVirtualTour from '@/components/MansionVirtualTour';
 import galleriesData from '@/data/galleries.json';
 import { GalleryTab, GalleryImage } from '@/types/mansion';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Enchanted Elegant Mansion - TotalMax Homes',
+  description: 'Discover the Enchanted Elegant Mansion, blending contemporary design with traditional Chinese garden elements in Las Vegas.',
+  openGraph: {
+    title: 'Enchanted Elegant Mansion - TotalMax Homes',
+    description: 'Discover the Enchanted Elegant Mansion, blending contemporary design with traditional Chinese garden elements in Las Vegas.',
+    url: 'https://www.totalmaxhomes.com/ee',
+    siteName: 'TotalMax Homes',
+    images: [
+      {
+        url: 'https://www.totalmaxhomes.com/2929-El-Camino-Rd-Las-Vegas-NV-print-013-15-Living-Room-3000x2000-300dpi.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Enchanted Elegant Mansion',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function EEPage() {
 

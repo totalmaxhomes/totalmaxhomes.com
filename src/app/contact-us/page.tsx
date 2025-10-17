@@ -5,6 +5,12 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import MathCaptcha from '@/components/MathCaptcha';
 import Image from 'next/image';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Us - TotalMax Homes',
+  description: 'Get in touch with TotalMax Homes for luxury vacation rentals in Las Vegas. Contact us for inquiries, bookings, and exceptional service.',
+}
 
 const ContactPage = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);

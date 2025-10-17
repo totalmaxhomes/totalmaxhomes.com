@@ -2,7 +2,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Luxury Mansions - TotalMax Homes',
+  description: 'Explore our collection of luxury mansions in Las Vegas. From Dreams & Desires to Ultimate Utopia, discover the perfect vacation rental for your stay.',
+  openGraph: {
+    title: 'Luxury Mansions - TotalMax Homes',
+    description: 'Explore our collection of luxury mansions in Las Vegas. From Dreams & Desires to Ultimate Utopia, discover the perfect vacation rental for your stay.',
+    url: 'https://www.totalmaxhomes.com/mansions',
+    siteName: 'TotalMax Homes',
+    images: [
+      {
+        url: 'https://www.totalmaxhomes.com/Enchanted-Elegant-Right.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'TotalMax Homes Mansions',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function MansionsPage() {
     return (

@@ -10,6 +10,28 @@ import MansionGallery from '@/components/MansionGallery';
 import MansionVirtualTour from '@/components/MansionVirtualTour';
 import galleriesData from '@/data/galleries.json';
 import { GalleryTab, GalleryImage } from '@/types/mansion';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Retreat of Revelation Mansion - TotalMax Homes',
+  description: 'Discover the Retreat of Revelation Mansion with European-inspired design, resort pool, and sports facilities in Las Vegas.',
+  openGraph: {
+    title: 'Retreat of Revelation Mansion - TotalMax Homes',
+    description: 'Discover the Retreat of Revelation Mansion with European-inspired design, resort pool, and sports facilities in Las Vegas.',
+    url: 'https://www.totalmaxhomes.com/rr',
+    siteName: 'TotalMax Homes',
+    images: [
+      {
+        url: 'https://www.totalmaxhomes.com/540A4189.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Retreat of Revelation Mansion',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function RRPage() {
 

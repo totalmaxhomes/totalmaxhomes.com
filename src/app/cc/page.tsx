@@ -9,6 +9,28 @@ import MansionBookNow from '@/components/MansionBookNow';
 import MansionGallery from '@/components/MansionGallery';
 import galleriesData from '@/data/galleries.json';
 import { GalleryTab, GalleryImage } from '@/types/mansion';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Celestial Mansion Club - TotalMax Homes',
+  description: 'Experience the Celestial Mansion Club, a world-class private nightclub mansion in Las Vegas with resort pools, spa, and industrial kitchen for unforgettable stays.',
+  openGraph: {
+    title: 'Celestial Mansion Club - TotalMax Homes',
+    description: 'Experience the Celestial Mansion Club, a world-class private nightclub mansion in Las Vegas with resort pools, spa, and industrial kitchen for unforgettable stays.',
+    url: 'https://www.totalmaxhomes.com/cc',
+    siteName: 'TotalMax Homes',
+    images: [
+      {
+        url: 'https://www.totalmaxhomes.com/W8A0456.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Celestial Mansion Club',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function CCPage() {
 

@@ -2,7 +2,28 @@ import LatestBlogs from '@/components/Blogs';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import React from 'react';
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Blogs - TotalMax Homes',
+  description: 'Stay updated with the latest news, tips, and insights about luxury vacation rentals in Las Vegas from TotalMax Homes.',
+  openGraph: {
+    title: 'Blogs - TotalMax Homes',
+    description: 'Stay updated with the latest news, tips, and insights about luxury vacation rentals in Las Vegas from TotalMax Homes.',
+    url: 'https://www.totalmaxhomes.com/blogs',
+    siteName: 'TotalMax Homes',
+    images: [
+      {
+        url: 'https://www.totalmaxhomes.com/Blog.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'TotalMax Homes Blogs',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 const BlogSection = () => {
     return (
