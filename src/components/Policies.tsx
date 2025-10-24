@@ -9,7 +9,7 @@ import CounterSection from "./Counter";
 
 export default function PoliciesSection() {
   const images = [
-    "/exterior-front-1.jpg",
+    "/exterior-front-1-luxury-mansion-las-vegas.jpg",
     "/Private-Night-Club-large-001-9-Exterior-Front-Entry-1500x1000-72dpi.jpg",
     "/W8A0301.jpg",
     "/540A4329.jpg",

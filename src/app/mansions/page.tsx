@@ -146,7 +146,7 @@ export default function MansionsPage() {
                     <section
                         key={mansion.id}
                         className={`relative w-full py-12 bg-cover bg-center`}
-                        style={{ backgroundImage: 'url("/bg3.jpg")' }}
+                        style={{ backgroundImage: 'url("/bg1.jpg")' }}
                     >
                         <div className={`max-w-7xl mx-auto px-4 flex ${!mansion.reverse ? 'md:flex md:flex-row-reverse' : 'md:flex md:flex-row'} items-start justify-between gap-8`}>
                             {/* Text Section */}

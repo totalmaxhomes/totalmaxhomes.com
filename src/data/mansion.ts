@@ -57,7 +57,7 @@ export const mansions: Mansion[] = [
   },
   {
     "type": "image",
-    "url": "/Retreat-of-Revelation-Main.jpg"
+    "url": "/retreat-of-revelation-main-luxury-mansion-las-vegas.jpg"
   },
   {
     "type": "text",
