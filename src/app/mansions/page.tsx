@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'TotalMax Homes',
     images: [
       {
-        url: 'https://www.totalmaxhomes.com/Enchanted-Elegant-Right.jpg',
+        url: 'https://www.totalmaxhomes.com/2929-El-Camino-Rd-Las-Vegas-NV-print-007-3-Exterior-Front-Entry-3000x1999-300dpi.jpg',
         width: 1200,
         height: 630,
         alt: 'TotalMax Homes Mansions',
@@ -34,7 +34,7 @@ export default function MansionsPage() {
                 {/* Top Header Section */}
                 <section
                     className="relative w-full flex items-center justify-center py-12 h-[400px] bg-cover bg-center"
-                    style={{ backgroundImage: 'url("/Enchanted-Elegant-Right.jpg")' }}
+                    style={{ backgroundImage: 'url("/2929-El-Camino-Rd-Las-Vegas-NV-print-007-3-Exterior-Front-Entry-3000x1999-300dpi.jpg")' }}
                 >
                     <div className="absolute inset-0 bg-black opacity-20"></div>
                     <div className="container mx-auto px-4 relative z-10">
@@ -52,9 +52,9 @@ export default function MansionsPage() {
                         title: 'The D&D Mansion',
                         heading: 'Dreams & Desires Mansion',
                         images: [
-                            '/Dreams-Desires-Mansion-1.jpg',
-                            '/Dreams-Desires-Mansion-2.jpg',
-                            '/Dreams-Desires-Mansion-3.jpg',
+                            '/Dreams-Desires-Left-1.jpg',
+                            '/Dreams-Desires-Right.jpg',
+                            '/Dreams-Desires-Main.jpg',
                         ],
                         paragraphs: [
                             'Experience the grandeur of ancient Rome at the D&D Mansion in Las Vegas! Indulge in the elegance of Roman mythology, relax like royalty in tranquil waters, and enjoy a quintessential Venetian ambiance with modern amenities.',
@@ -68,9 +68,9 @@ export default function MansionsPage() {
                         title: 'The O&O Mansion',
                         heading: 'Oasis Oakey Mansion',
                         images: [
-                            '/Oasis-Oakey-Mansion-1.jpg',
-                            '/Oasis-Oakey-Mansion-2.jpg',
-                            '/Oasis-Oakey-Mansion-3.jpg',
+                            '/oasis-oakey-left-luxury-mansion-las-vegas.jpg',
+                            '/oasis-oakey-right-luxury-mansion-las-vegas.jpg',
+                            '/Oasis-Oakey-Main.jpg',
                         ],
                         paragraphs: [
                             'Step into the elegance of the O&O Mansion, where 30-foot-high ceilings, colorful glass murals, and Italian-inspired architecture evoke the charm of old Hollywood. This luxurious retreat features a resort-style pool with waterfalls, a grotto, swim-up bars, a large spa, and lush landscaping with palm trees and bamboo.',
@@ -100,9 +100,9 @@ export default function MansionsPage() {
                         title: 'The E&E Mansion',
                         heading: 'Enchanted Elegant Mansion',
                         images: [
-                            '/Enchanted-Elegant-Mansion-1.jpg',
-                            '/Enchanted-Elegant-Mansion-2.jpg',
-                            '/Enchanted-Elegant-Mansion-3.jpg',
+                            '/enchanted-elegant-left-luxury-mansion-las-vegas.jpg',
+                            '/Enchanted-Elegant-Right.jpg',
+                            '/Enchanted-Elegant-Main.jpg',
                         ],
                         paragraphs: [
                             'The E & E Mansion in Las Vegas blends contemporary design with traditional Chinese garden elements. Suzhou-inspired walls, a waterfall, and black lava bricks create a tranquil ambiance, while gold and red palace doors, white walls, and grey tiles showcase Eastern luxury in a modern setting.',
@@ -116,9 +116,9 @@ export default function MansionsPage() {
                         title: 'The C&C Mansion',
                         heading: 'Celestial Mansion Club',
                         images: [
-                            '/Celestial-Mansion-Club-1.jpg',
-                            '/Celestial-Mansion-Club-2.jpg',
-                            '/Celestial-Mansion-Club-3.jpg',
+                            '/celestial-mansion-club-left-luxury-mansion-las-vegas.jpg',
+                            '/Celestial-Mansion-Club-Right.jpg',
+                            '/Celestial-Mansion-Club-Main.jpg',
                         ],
                         paragraphs: [
                             'The C & C Mansion Club is a luxurious property in Las Vegas, resembling a world-class private nightclub. It features a resort-style pool, spa, and a full industrial kitchen, ensuring guests are entertained and comfortable throughout their stay.',
@@ -132,9 +132,9 @@ export default function MansionsPage() {
                         title: 'The U&U Mansion',
                         heading: 'Ultimate Utopia Mansion',
                         images: [
-                            '/Ultimate-Utopia-Mansion-1.jpg',
-                            '/Ultimate-Utopia-Mansion-2.jpg',
-                            '/Ultimate-Utopia-Mansion-3.jpg',
+                            '/Ultimate-Utopia-Left.jpg',
+                            '/Ultimate-Utopia-Right.jpg',
+                            '/ultimate-utopia-main-luxury-mansion-las-vegas.jpg',
                         ],
                         paragraphs: [
                             'Arriving at the U & U Mansion, you’re welcomed by an impressive mural wall depicting "Qingming Shan He Tu" and a grand circular driveway with three large sliding gates. Welcome to the Ultimate Utopia Mansion.',

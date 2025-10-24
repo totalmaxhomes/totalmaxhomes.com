@@ -11,15 +11,15 @@ export const mansions: Mansion[] = [
   
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Dreams-Desires-Left-1.jpg"
+    "url": "/Dreams-Desires-Left-1.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Dreams-Desires-Right.jpg"
+    "url": "/Dreams-Desires-Right.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Dreams-Desires-Main.jpg"
+    "url": "/Dreams-Desires-Main.jpg"
   },
   {
     "type": "text",
@@ -30,15 +30,15 @@ export const mansions: Mansion[] = [
   
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Oasis-Oakey-Left.jpg"
+    "url": "/oasis-oakey-left-luxury-mansion-las-vegas.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Oasis-Oakey-Right.jpg"
+    "url": "/oasis-oakey-right-luxury-mansion-las-vegas.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Oasis-Oakey-Main.jpg"
+    "url": "/Oasis-Oakey-Main.jpg"
   },
   {
     "type": "text",
@@ -49,15 +49,15 @@ export const mansions: Mansion[] = [
   
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Retreat-of-Revelation-Left.jpg"
+    "url": "/Retreat-of-Revelation-Left.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Retreat-of-Revelation-Right.jpg"
+    "url": "/Retreat-of-Revelation-Right.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Retreat-of-Revelation-Main.jpg"
+    "url": "/Retreat-of-Revelation-Main.jpg"
   },
   {
     "type": "text",
@@ -68,15 +68,15 @@ export const mansions: Mansion[] = [
   
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Enchanted-Elegant-Left.jpg"
+    "url": "/enchanted-elegant-left-luxury-mansion-las-vegas.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Enchanted-Elegant-Right.jpg"
+    "url": "/Enchanted-Elegant-Right.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Enchanted-Elegant-Main.jpg"
+    "url": "/Enchanted-Elegant-Main.jpg"
   },
   {
     "type": "text",
@@ -87,15 +87,15 @@ export const mansions: Mansion[] = [
   
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Celestial-Mansion-Club-Left.jpg"
+    "url": "/celestial-mansion-club-left-luxury-mansion-las-vegas.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Celestial-Mansion-Club-Right.jpg"
+    "url": "/Celestial-Mansion-Club-Right.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Celestial-Mansion-Club-Main.jpg"
+    "url": "/Celestial-Mansion-Club-Main.jpg"
   },
   {
     "type": "text",
@@ -106,14 +106,14 @@ export const mansions: Mansion[] = [
   
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Ultimate-Utopia-Left.jpg"
+    "url": "/Ultimate-Utopia-Left.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Ultimate-Utopia-Right.jpg"
+    "url": "/Ultimate-Utopia-Right.jpg"
   },
   {
     "type": "image",
-    "url": "https://totalmaxhomes.wpenginepowered.com/wp-content/uploads/2024/05/Ultimate-Utopia-Main.jpg"
+    "url": "/ultimate-utopia-main-luxury-mansion-las-vegas.jpg"
   }
 ];
