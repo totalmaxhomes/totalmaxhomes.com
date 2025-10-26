@@ -94,7 +94,7 @@ export default function CCPage() {
                 />
                 <MansionBookNow link="/contact-us" />
                 {/* <MansionVirtualTour title="Virtual Tour" videos={videos} backgroundImage="/bg5.jpg" /> */}
-                <MansionBookNow link="/contact-us" />
+                {/* <MansionBookNow link="/contact-us" /> */}
 
             </div>
             <Footer />
