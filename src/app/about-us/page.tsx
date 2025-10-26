@@ -19,7 +19,7 @@ function About() {
                 className="relative w-full h-[350px] flex items-center justify-center py-16 md:py-24 bg-cover bg-center bg-no-repeat"
                 style={{
                     backgroundImage:
-                        "url('/Ultimate-Utopia-Main.jpg')",
+                        "url('/About.jpg')",
                 }}
             >
                 {/* Background overlay for better text visibility */}

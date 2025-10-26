@@ -16,7 +16,7 @@ function Solutions() {
                 className="relative w-full h-[350px] bg-cover bg-center bg-no-repeat py-24"
                 style={{
                     backgroundImage:
-                        "url('/6425-Darby-Ave-Las-Vegas-NV-print-098-66-Exterior-Hot-Tub-2700x1800-300dpi-1-scaled.jpg')",
+                        "url('/Solution.jpg')",
                 }}
             >
                 {/* Overlay (optional for dimming) */}

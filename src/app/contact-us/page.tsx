@@ -5,7 +5,6 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import MathCaptcha from '@/components/MathCaptcha';
 import Image from 'next/image';
-
 const ContactPage = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isCaptchaValid, setIsCaptchaValid] = useState(false);
@@ -19,14 +18,12 @@ const ContactPage = () => {
         }
         const formData = new FormData(e.currentTarget);
         try {
-            const response = await fetch('https://formspree.io/f/mkgqjybv', {
+            const response = await fetch('/api/contact-us', {
                 method: 'POST',
                 body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
             });
             const result = await response.json();
+            console.log('Form submission result:', result);
             if (result.error) {
                 console.log('Form submission error:', result.error);
                 alert(`Error: ${result.error}`);
@@ -364,7 +361,7 @@ const ContactPage = () => {
                                 </div>
                             </div>
                             <Image
-                                src="/O-O.png"
+                                src="/O-O.webp"
                                 alt="Oasis Oakey Mansion"
                                 width={633}
                                 height={330}

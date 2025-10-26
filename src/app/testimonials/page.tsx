@@ -108,7 +108,7 @@ export default function TestimonialsPage() {
         {/* Header Section */}
         <MansionHeader
           title="Testimonials"
-          backgroundImage="/Ultimate-Utopia-Main.jpg"
+          backgroundImage="/Testimonial.jpg"
         />
 
         {/* Submit Testimonial Section */}
