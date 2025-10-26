@@ -102,7 +102,7 @@ export default function UUPage() {
                 <MansionFeatures features={features3} backgroundImage="/bg5.jpg" />
                 <MansionBookNow link="/contact-us" />
                 <MansionGallery
-                    tabs={galleriesData.cc.tabs.map((tab: GalleryTab) => ({
+                    tabs={galleriesData.uu.tabs.map((tab: GalleryTab) => ({
                         ...tab,
                         images: tab.images.map((img: GalleryImage, idx: number) => ({
                             ...img,
