@@ -56,7 +56,7 @@ export default function DDPage() {
   ];
 
   const features2 = [
-    { image: '/Conference.jpg', title: 'Conference Facilities', description: 'Includes a conference room' },
+    { image: '/6425-Darby-Ave-Las-Vegas-NV-print-020-4-Dining-Room-2700x1800-300dpi.jpg', title: 'Conference Facilities', description: 'Includes a conference room' },
     { image: '/6425-Darby-Ave-Las-Vegas-NV-print-104-105-Exterior-Pool-2700x1799-300dpi.jpg', title: 'Outdoor Features', description: 'Resort-style pool with waterfalls, grotto, and swim-up bars<br />Private Chinese garden with Taihu stones from Suzhou, China<br />Southern lawn for events, accommodating up to 500 seated guests' },
     { image: '/6425-Darby-Ave-Las-Vegas-NV-print-135-69-Driveway-2700x1800-300dpi.jpg', title: 'Parking', description: 'Ample space available' }
   ];
