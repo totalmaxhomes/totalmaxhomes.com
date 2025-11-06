@@ -35,7 +35,7 @@ export default function MathCaptcha({ onValidate }: MathCaptchaProps) {
 
   return (
     <div className="flex flex-col">
-      <label htmlFor="captcha" className="block text-sm font-medium text-gray-700 mb-1">
+      <label htmlFor="captcha" className="block text-sm font-medium text-gray-700 dark:text-white mb-1">
         What is {num1} + {num2}? <span className="text-red-500">*</span>
       </label>
       <input
@@ -44,7 +44,7 @@ export default function MathCaptcha({ onValidate }: MathCaptchaProps) {
         value={answer}
         onChange={handleAnswerChange}
         required
-        className="w-full px-4 py-3 text-black border border-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full px-4 py-3 text-black border bg-white border-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         placeholder="Enter the answer"
       />
       {!isValid && answer && (

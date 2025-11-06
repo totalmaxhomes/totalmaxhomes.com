@@ -235,6 +235,7 @@ const ContactForm: React.FC = () => {
                       value={formData.checkOutDate}
                       onChange={handleInputChange}
                       required
+                      min={formData.checkInDate || undefined}
                       className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
                     />
                   </div>
@@ -249,6 +250,7 @@ const ContactForm: React.FC = () => {
                       value={formData.checkInDate}
                       onChange={handleInputChange}
                       required
+                      max={formData.checkOutDate || undefined}
                       className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
                     />
                   </div>
