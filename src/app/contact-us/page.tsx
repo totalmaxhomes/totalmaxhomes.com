@@ -64,7 +64,7 @@ const ContactPage = () => {
                     {/* Get in Touch Section */}
                     <section className="relative w-full py-12 md:py-24">
                         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
-                        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {/* <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8"> */}
                             {/* Left Column: Form */}
                             <div className="px-0 md:px-8">
                                 <h1 className="text-3xl text-[#1C1C1C] md:text-5xl font-medium mb-6">Get in Touch</h1>
@@ -138,7 +138,7 @@ const ContactPage = () => {
                             </div>
 
                             {/* Right Column: Map and Headquarters */}
-                            <div className="text-sm font-light">
+                            {/* <div className="text-sm font-light">
                                 <div className="mb-6">
                                     <iframe
                                         loading="lazy"
@@ -158,8 +158,8 @@ const ContactPage = () => {
                                         <p className='text-sm text-[#636363] tracking-wider font-light'>+1 702 592 6888</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> */}
+                        {/* </div> */}
                     </section>
 
                     {/* Mansions Sections */}
