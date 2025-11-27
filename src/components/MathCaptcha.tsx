@@ -4,9 +4,10 @@ import { useState, useEffect } from 'react';
 
 interface MathCaptchaProps {
   onValidate: (isValid: boolean) => void;
+  labelColor?: string;
 }
 
-export default function MathCaptcha({ onValidate }: MathCaptchaProps) {
+export default function MathCaptcha({ onValidate, labelColor = "text-gray-700 dark:text-white" }: MathCaptchaProps) {
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
   const [answer, setAnswer] = useState('');
@@ -35,7 +36,7 @@ export default function MathCaptcha({ onValidate }: MathCaptchaProps) {
 
   return (
     <div className="flex flex-col">
-      <label htmlFor="captcha" className="block text-sm font-medium text-gray-700 dark:text-white mb-1">
+      <label htmlFor="captcha" className={`block text-sm font-medium ${labelColor} mb-1`}>
         What is {num1} + {num2}? <span className="text-red-500">*</span>
       </label>
       <input

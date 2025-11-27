@@ -117,9 +117,8 @@ const ContactForm: React.FC = () => {
     <>
       <div
         ref={sectionRef}
-        className={`bg-white w-full py-10 transition-all duration-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
+        className={`bg-white w-full py-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
       >
         <div className="max-w-5xl mx-auto bg-[#373737] rounded-lg shadow-sm px-6 py-8 my-10" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           {/* Progress Bar */}
@@ -227,21 +226,6 @@ const ContactForm: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="space-y-2">
                     <label className="block text-sm font-medium text-white">
-                      Check-out Date <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="date"
-                      name="checkOutDate"
-                      value={formData.checkOutDate}
-                      onChange={handleInputChange}
-                      required
-                      min={formData.checkInDate || undefined}
-                      className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-white">
                       Check-in Date <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -251,6 +235,21 @@ const ContactForm: React.FC = () => {
                       onChange={handleInputChange}
                       required
                       max={formData.checkOutDate || undefined}
+                      className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-white">
+                      Check-out Date <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="date"
+                      name="checkOutDate"
+                      value={formData.checkOutDate}
+                      onChange={handleInputChange}
+                      required
+                      min={formData.checkInDate || undefined}
                       className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
                     />
                   </div>
@@ -276,7 +275,7 @@ const ContactForm: React.FC = () => {
                 </div>
 
                 {/* Math Captcha */}
-                <MathCaptcha onValidate={setIsCaptchaValid} />
+                <MathCaptcha onValidate={setIsCaptchaValid} labelColor="text-white" />
 
                 <div className="flex justify-center gap-4 ">
                   <button
