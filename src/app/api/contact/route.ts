@@ -28,8 +28,7 @@ export async function POST(request: NextRequest) {
     const plunk = new Plunk(plunkApiKey);
 
     await plunk.emails.send({
-      from: email,
-      to: ['inquiry@totalmaxhomes.com'],
+      to: 'inquiry@totalmaxhomes.com',
       subject: 'New Inquiry from Website',
       body: emailBody
     });
