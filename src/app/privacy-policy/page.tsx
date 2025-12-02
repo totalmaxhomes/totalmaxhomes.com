@@ -160,7 +160,7 @@ export default function PrivacyPolicy() {
           <h2 className="text-3xl text-[#1c1c1c] font-semibold mt-8 mb-4">Contact Us</h2>
           <p className="text-sm font-light tracking-widest mb-4">If you have any questions about this Privacy Policy, please contact us:</p>
           <ul className="list-disc pl-8 mb-4">
-            <li>By email: <a href="mailto:inquiry@totalmaxhomes.com" className="text-[#C19B77] underline">inquiry@totalmaxhomes.com</a></li>
+            {/* <li>By email: <a href="mailto:inquiry@totalmaxhomes.com" className="text-[#C19B77] underline">inquiry@totalmaxhomes.com</a></li> */}
             <li>By visiting this page on our website: <a href="https://totalmaxhome.com/contact-us" className="text-[#C19B77] underline">https://totalmaxhome.com/contact-us</a></li>
           </ul>
         </div>
