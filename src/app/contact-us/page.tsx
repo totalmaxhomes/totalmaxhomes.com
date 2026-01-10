@@ -65,80 +65,80 @@ const ContactPage = () => {
                     <section className="relative w-full py-12 md:py-24">
                         {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
                         {/* <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8"> */}
-                            {/* Left Column: Form */}
-                            <div className="px-0 md:px-8">
-                                <h1 className="text-3xl text-[#1C1C1C] md:text-5xl font-medium mb-6">Get in Touch</h1>
-                                {isSubmitted && (
-                                    <div className="text-center py-8">
-                                        <h2 className="text-2xl font-semibold text-[#1C1C1C]">Thank you for your message!</h2>
-                                        <p className="text-[#636363] mt-4">We will get back to you soon.</p>
-                                    </div>
-                                )}
-                                <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-                                    <div>
-                                        <label htmlFor="name" className="sr-only">Name *</label>
-                                        <input
-                                            id="name"
-                                            name="name"
-                                            type="text"
-                                            placeholder="Name"
-                                            required
-                                            className="w-full p-3 border border-gray-300 text-sm font-light"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="email" className="sr-only">Email Address *</label>
-                                        <input
-                                            id="email"
-                                            name="email"
-                                            type="email"
-                                            placeholder="Email Address"
-                                            required
-                                            className="w-full p-3 border border-gray-300 text-sm font-light"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="phone" className="sr-only">Phone Number *</label>
-                                        <input
-                                            id="phone"
-                                            name="phone"
-                                            type="tel"
-                                            placeholder="Phone Number"
-                                            required
-                                            className="w-full p-3 border border-gray-300 text-sm font-light"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="message" className="sr-only">Message</label>
-                                        <textarea
-                                            id="message"
-                                            name="message"
-                                            placeholder="Message"
-                                            rows={5}
-                                            className="w-full p-3 border border-gray-300 text-sm font-light"
-                                        ></textarea>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <input
-                                            id="consent"
-                                            name="consent"
-                                            type="checkbox"
-                                            required
-                                            className="mr-2"
-                                        />
-                                        <label htmlFor="consent" className="text-sm font-medium text-[#000000]">
-                                            I consent to TotalMax Homes Privacy Policy. <u><a className='text-[#636363]' href="https://www.totalmaxhomes.com/privacy-policy" target="_blank">Please read first</a></u>.*
-                                        </label>
-                                    </div>
-                                    <MathCaptcha onValidate={setIsCaptchaValid} />
-                                    <button type="submit" className="px-12 text-sm text-white font-semibold tracking-widest py-3 bg-[#C19B77]">
-                                        Submit
-                                    </button>
-                               </form>
-                            </div>
+                        {/* Left Column: Form */}
+                        <div className="px-0 md:px-8">
+                            <h1 className="text-3xl text-[#1C1C1C] md:text-5xl font-medium mb-6">Get in Touch</h1>
+                            {isSubmitted && (
+                                <div className="text-center py-8">
+                                    <h2 className="text-2xl font-semibold text-[#1C1C1C]">Thank you for your message!</h2>
+                                    <p className="text-[#636363] mt-4">We will get back to you soon.</p>
+                                </div>
+                            )}
+                            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
+                                <div>
+                                    <label htmlFor="name" className="sr-only">Name *</label>
+                                    <input
+                                        id="name"
+                                        name="name"
+                                        type="text"
+                                        placeholder="Name"
+                                        required
+                                        className="w-full p-3 border border-gray-300 text-sm font-light"
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="email" className="sr-only">Email Address *</label>
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        placeholder="Email Address"
+                                        required
+                                        className="w-full p-3 border border-gray-300 text-sm font-light"
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="phone" className="sr-only">Phone Number *</label>
+                                    <input
+                                        id="phone"
+                                        name="phone"
+                                        type="tel"
+                                        placeholder="Phone Number"
+                                        required
+                                        className="w-full p-3 border border-gray-300 text-sm font-light"
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="message" className="sr-only">Message</label>
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        placeholder="Message"
+                                        rows={5}
+                                        className="w-full p-3 border border-gray-300 text-sm font-light"
+                                    ></textarea>
+                                </div>
+                                <div className="flex items-center">
+                                    <input
+                                        id="consent"
+                                        name="consent"
+                                        type="checkbox"
+                                        required
+                                        className="mr-2"
+                                    />
+                                    <label htmlFor="consent" className="text-sm font-medium text-[#000000]">
+                                        I consent to TotalMax Homes Privacy Policy. <u><a className='text-[#636363]' href="https://www.totalmaxhomes.com/privacy-policy" target="_blank">Please read first</a></u>.*
+                                    </label>
+                                </div>
+                                <MathCaptcha onValidate={setIsCaptchaValid} labelColor="text-black" />
+                                <button type="submit" className="px-12 text-sm text-white font-semibold tracking-widest py-3 bg-[#C19B77]">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
 
-                            {/* Right Column: Map and Headquarters */}
-                            {/* <div className="text-sm font-light">
+                        {/* Right Column: Map and Headquarters */}
+                        {/* <div className="text-sm font-light">
                                 <div className="mb-6">
                                     <iframe
                                         loading="lazy"
@@ -562,20 +562,20 @@ const ContactPage = () => {
                                             >
                                                 {/* SVG map marker icon */}
                                                 <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="14"
-                                                height="14"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                strokeWidth="2"
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                className="lucide lucide-map-pin mr-2"
-                                            >
-                                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
-                                                <circle cx="12" cy="10" r="3" />
-                                            </svg>
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="14"
+                                                    height="14"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    className="lucide lucide-map-pin mr-2"
+                                                >
+                                                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
                                                 {text}
                                             </li>
                                         ))}
@@ -611,46 +611,46 @@ const ContactPage = () => {
                             >
                                 {/* Dark overlay for better readability */}
                                 <div className="absolute inset-0 bg-black/5"></div>
-                            <div className="relative z-10">
-                                <h1 className="text-3xl md:text-4xl font-medium mb-4">CELESTIAL MANSION CLUB</h1>
-                                <h1 className="text-2xl md:text-xl tracking-widest font-medium mb-4">
-                                    Nearby Top Attractions:
-                                </h1>
-                                <ul className="space-y-2">
-                                    {[
-                                        "0.27 mi to D & D Mansion",
-                                        "0.22 mi to E & E Mansion",
-                                        "0.62 mi to R & R Mansion",
-                                        "1.35 mi to O & O Mansion",
-                                        "3.62 mi to Las Vegas Strip",
-                                        "5.66 mi to McCarran Int’l Airport",
-                                        "4.71 mi to Las Vegas Convention Center",
-                                    ].map((text, i) => (
-                                    <li
-                                        key={i}
-                                        className="flex text-sm font-light tracking-widest items-center"
-                                    >
-                                        {/* SVG map marker icon */}
-                                        <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="14"
-                                                height="14"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                strokeWidth="2"
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                className="lucide lucide-map-pin mr-2"
+                                <div className="relative z-10">
+                                    <h1 className="text-3xl md:text-4xl font-medium mb-4">CELESTIAL MANSION CLUB</h1>
+                                    <h1 className="text-2xl md:text-xl tracking-widest font-medium mb-4">
+                                        Nearby Top Attractions:
+                                    </h1>
+                                    <ul className="space-y-2">
+                                        {[
+                                            "0.27 mi to D & D Mansion",
+                                            "0.22 mi to E & E Mansion",
+                                            "0.62 mi to R & R Mansion",
+                                            "1.35 mi to O & O Mansion",
+                                            "3.62 mi to Las Vegas Strip",
+                                            "5.66 mi to McCarran Int’l Airport",
+                                            "4.71 mi to Las Vegas Convention Center",
+                                        ].map((text, i) => (
+                                            <li
+                                                key={i}
+                                                className="flex text-sm font-light tracking-widest items-center"
                                             >
-                                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
-                                                <circle cx="12" cy="10" r="3" />
-                                            </svg>
-                                        {text}
-                                    </li>
+                                                {/* SVG map marker icon */}
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="14"
+                                                    height="14"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    className="lucide lucide-map-pin mr-2"
+                                                >
+                                                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                                {text}
+                                            </li>
                                         ))}
-                                </ul>
-                            </div>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </section>
