@@ -22,6 +22,7 @@ export async function POST(request: NextRequest) {
 
     // Send email to admin
     await plunk.emails.send({
+      from: 'inquiry@totalmaxhomes.com',
       to: 'inquiry@totalmaxhomes.com', // Replace with actual admin email
       subject: 'New Contact Form Submission',
       body: `
@@ -35,6 +36,7 @@ export async function POST(request: NextRequest) {
 
     // Send confirmation email to user
     await plunk.emails.send({
+      from: 'inquiry@totalmaxhomes.com',
       to: email,
       subject: 'Thank you for contacting TotalMax Homes',
       body: `
