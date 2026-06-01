@@ -50,15 +50,15 @@ export default function OOPage() {
     ];
 
     const features1 = [
-        { image: '/OO-Kitchen.jpg', title: 'BATH', description: 'Indoor Kitchen: Features 6 burners, 2 wall ovens, 2 long islands (each up to 10 feet), capable of serving over 20 guests Outdoor Kitchen: Full kitchen facilities adjacent to the resort pool' },
-        { image: '/backyard-5.jpg', title: 'Dining Areas', description: 'Includes a large living room, family room, dining room, breakfast area, and Center O Bar' },
+        { image: '/OO-Kitchen.jpg', title: 'Indoor Kitchen', description: 'Indoor Kitchen: Features 6 burners, 2 wall ovens, 2 long islands (each up to 10 feet), capable of serving over 20 guests Outdoor Kitchen: Full kitchen facilities adjacent to the resort pool' },
+        { image: '/dining-room-3.jpg', title: 'Dining Areas', description: 'Includes a large living room, family room, dining room, breakfast area, and Center O Bar' },
         { image: '/OO-Pool-Area.jpg', title: 'Pool Area', description: 'Large resort pool with waterfalls, a grotto, swim-up bars, and a large jetted spa Hawaiian style Palapa shades Water mist and covered sunscreen' }
     ];
 
     const features2 = [
         { image: '/6425-Darby-Ave-Las-Vegas-NV-print-104-105-Exterior-Pool-2700x1799-300dpi.jpg', title: 'Outdoor Features', description: 'Backyard with palm trees and bamboos Outdoor kitchen and seating areas near the swim-up bar' },
         { image: '/OO-Architecture.jpg', title: 'Architecture', description: 'Italian with high ceilings, multi-colored glass mural windows, archways, and columns' },
-        { image: '/W8A0341.jpg', title: 'Additional Features', description: 'Used for TV, movies, and professional photo sessions Central industrial-style bar' }
+        { image: '/wetbar-1.jpg', title: 'Additional Features', description: 'Used for TV, movies, and professional photo sessions Central industrial-style bar' }
     ];
 
     const videos = [
