@@ -10,6 +10,7 @@ import PoliciesSection from "@/components/Policies";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import WhoWeAre from "@/components/WhoWeAre";
 import { mansions } from "@/data/mansion";
+import { getAllPosts } from "@/lib/blog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -33,9 +34,23 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+const siteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'TotalMax Homes',
+  url: 'https://www.totalmaxhomes.com',
+  logo: 'https://www.totalmaxhomes.com/totalmaxhomes.png',
+  description: 'World\'s Best Luxury Vacation Rentals in Las Vegas. TotalMax Homes "Las Hawaii" Mansions.',
+  address: { '@type': 'PostalAddress', addressLocality: 'Las Vegas', addressRegion: 'NV', addressCountry: 'US' },
+  contactPoint: { '@type': 'ContactPoint', telephone: '+1-702-592-6888', contactType: 'customer service' },
+  sameAs: ['https://www.facebook.com/totalmaxhomes', 'https://www.instagram.com/totalmaxhomes'],
+};
+
+export default async function Home() {
+  const posts = await getAllPosts();
   return (
-    <> 
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }} />
     <Navbar />
     <HeroSection />
     {/* <FeaturedMansion /> */}
@@ -46,7 +61,7 @@ export default function Home() {
     <PoliciesSection />
     <FeaturesSection />
     <BookMansionSection />
-    <LatestBlogs limit={3}/>
+    <LatestBlogs posts={posts} limit={3} />
     <Footer />
     </>
   ); 

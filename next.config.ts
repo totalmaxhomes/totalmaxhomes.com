@@ -3,6 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   typedRoutes: true,
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "mmbiz.qpic.cn" },
+      { protocol: "https", hostname: "*.qpic.cn" },
+    ],
+  },
   async redirects() {
     return [
       {

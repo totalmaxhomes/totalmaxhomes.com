@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Force dark mode to be class-based only — OS dark mode won't affect anything */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,12 +16,7 @@
   --font-montserrat: var(--font-montserrat);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   top: 0px !important;

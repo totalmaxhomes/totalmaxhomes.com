@@ -30,20 +30,7 @@ export default function PoliciesSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 xl:px-12 flex-none xl:flex gap-6 items-center">
         {/* Left Side */}
-        <div className="w-full py-6 xl:py-0 xl:w-[400px]">
-          <h5 className="text-sm font-medium text-[#C19B77] uppercase tracking-widest mb-8">
-            Policies
-          </h5>
-          <h1 className="text-5xl leading-14 w-40 text-[#1C1C1C] font-medium mt-2 mb-8">
-            Rental Disclaimer
-          </h1>
-          <p className="text-sm text-[#636363] mb-6 tracking-widest leading-6">
-            All rentals will need to be 32+ days to 6 months (MTR). Other Clark
-            County ordinances on noise level, public parking, etc. are also
-            required to be observed. For details please refer to our Property
-            Rental Agreement.
-          </p>
-
+        <div className="w-full py-6 xl:py-0 xl:w-[400px] flex items-center">
           <a
             href="/contact-us"
             className="inline-block text-xs bg-[#C19B77] text-white px-6 py-3 font-semibold tracking-widest"
