@@ -177,19 +177,3 @@ And just 3 miles away, the poolside bar at TotalMax is saving a mojito for you. 
 Because the end of every party isn’t a goodbye — It’s the moment you open the door to your very own mansion, And lock in the starlight, the music, and the laughter For another 24 unforgettable hours.
 
 ![Image](/blog-images/img_7d73d5ca7640.jpg)
-
-END
-
-Past Articles
-
-The Enchanted E&E Mansion—A Timeless Chinese Courtyard
-
-Client Event Highlights at the Oasis Oakey Mansion
-
-Ready for This? Pool Party at the Oasis Oakey Mansion
-
-How to Find the Perfect Vacation Mansion? TotalMax Homes Reveals All
-
-September in Las Vegas: 3 Music Festivals + 6 Mansions for the Ultimate Journey
-
-![Image](/blog-images/img_29ea608775b0.jpg)
