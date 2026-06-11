@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* QR Code — auto shown on every post */}
           <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col items-center text-center gap-4">
-            <p className="text-[#636363] text-sm uppercase tracking-widest font-semibold">Scan to Book / Inquire</p>
+            <p className="text-[#636363] text-sm uppercase tracking-widest font-semibold">Scan to Bio Link</p>
             <Image
               src="/blog-images/linktree-qr-code.jpg"
               alt="Scan QR Code to Book"
