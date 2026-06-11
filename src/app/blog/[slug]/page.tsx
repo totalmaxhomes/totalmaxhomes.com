@@ -125,6 +125,18 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* Post Body — rendered via Streamdown */}
           <BlogContent content={post.content} />
+
+          {/* QR Code — auto shown on every post */}
+          <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col items-center text-center gap-4">
+            <p className="text-[#636363] text-sm uppercase tracking-widest font-semibold">Scan to Book / Inquire</p>
+            <Image
+              src="/blog-images/linktree-qr-code.jpg"
+              alt="Scan QR Code to Book"
+              width={200}
+              height={200}
+              className="w-48 h-48 object-contain"
+            />
+          </div>
         </section>
 
         {/* Prev / Next Navigation */}

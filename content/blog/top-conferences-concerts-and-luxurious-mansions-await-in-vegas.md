@@ -189,9 +189,3 @@ How to Find the Perfect Vacation Mansion? TotalMax Homes Reveals All
 September in Las Vegas: 3 Music Festivals + 6 Mansions for the Ultimate Journey
 
 ![Image](/blog-images/img_29ea608775b0.jpg)
-
-![Image](/blog-images/img_d34bbc31bd0e.png)
-
-Scan the QR code for inquiries/bookings!
-
-![Image](/blog-images/img_3e77881ee3e9.png)
