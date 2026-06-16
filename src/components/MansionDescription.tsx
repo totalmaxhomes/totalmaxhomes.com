@@ -1,3 +1,8 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
+import { getMansionNameByPath } from '@/lib/inquiry';
+
 interface MansionDescriptionProps {
   title: string;
   paragraphs: string[];
@@ -6,6 +11,20 @@ interface MansionDescriptionProps {
 }
 
 export default function MansionDescription({ title, paragraphs, backgroundImage, bookLink }: MansionDescriptionProps) {
+  const pathname = usePathname();
+
+  let targetLink = bookLink;
+  if (bookLink === '/contact-us') {
+    const mansionName = getMansionNameByPath(pathname || '');
+    if (mansionName) {
+      targetLink = `/#inquiry-form?mansion=${encodeURIComponent(mansionName)}`;
+    } else {
+      targetLink = '/#inquiry-form';
+    }
+  }
+
+  const isInternal = targetLink.startsWith('/') || targetLink.startsWith('#');
+
   return (
     <section
       className="
@@ -25,9 +44,9 @@ export default function MansionDescription({ title, paragraphs, backgroundImage,
           </p>
         ))}
         <a
-          href={bookLink}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={targetLink}
+          target={isInternal ? undefined : "_blank"}
+          rel={isInternal ? undefined : "noopener noreferrer"}
           className="bg-[#C19B77] hover:bg-[#b08968] transition text-white px-4 sm:px-6 py-2 sm:py-3 rounded inline-block mt-3 md:mt-4 text-sm sm:text-base md:text-lg"
         >
           Book Now

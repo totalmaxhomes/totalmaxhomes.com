@@ -180,12 +180,12 @@ export default function Navbar() {
 
               {/* RIGHT: Book Now button */}
               <div className="col-span-12 lg:col-span-4 flex items-center justify-center lg:justify-end">
-                <a
-                  href="/contact-us"
+                <Link
+                  href="/#inquiry-form"
                   className="inline-block bg-[#373737] text-white text-sm px-4 py-2 rounded scale-100 hover:scale-105 transform transition-transform font-medium"
                 >
                   BOOK NOW
-                </a>
+                </Link>
               </div>
             </div>
           </div>

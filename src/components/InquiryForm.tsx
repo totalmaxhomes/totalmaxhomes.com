@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import MathCaptcha from './MathCaptcha';
+import { getInitialMansion } from '@/lib/inquiry';
 
 const ContactForm: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -19,6 +20,19 @@ const ContactForm: React.FC = () => {
     checkOutDate: '',
     guests: ''
   });
+
+  useEffect(() => {
+    // Read mansion query parameter on mount
+    if (typeof window !== 'undefined') {
+      const initialMansion = getInitialMansion(window.location.search);
+      if (initialMansion) {
+        setFormData(prev => ({
+          ...prev,
+          mansion: initialMansion
+        }));
+      }
+    }
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -117,6 +131,7 @@ const ContactForm: React.FC = () => {
     <>
       <div
         ref={sectionRef}
+        id="inquiry-form"
         className={`bg-white w-full py-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
       >
@@ -135,20 +150,71 @@ const ContactForm: React.FC = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Page 1 */}
+            {/* Page 1: Dates, Guests, and optional Mansion Selection */}
             {currentPage === 1 && (
               <div className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {/* Mansion */}
+                  {/* Check-in Date */}
                   <div className="space-y-2">
                     <label className="block text-sm font-medium text-white">
-                      Choose Mansion <span className="text-red-500">*</span>
+                      Check-in Date <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="date"
+                      name="checkInDate"
+                      value={formData.checkInDate}
+                      onChange={handleInputChange}
+                      required
+                      max={formData.checkOutDate || undefined}
+                      className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
+                    />
+                  </div>
+
+                  {/* Check-out Date */}
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-white">
+                      Check-out Date <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="date"
+                      name="checkOutDate"
+                      value={formData.checkOutDate}
+                      onChange={handleInputChange}
+                      required
+                      min={formData.checkInDate || undefined}
+                      className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
+                    />
+                  </div>
+
+                  {/* Guests */}
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-white">
+                      Guests <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="number"
+                      name="guests"
+                      min="1"
+                      max="100"
+                      value={formData.guests}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
+                    />
+                    <p className="text-xs text-white">
+                      Please enter a number between <strong>1</strong> and <strong>100</strong>.
+                    </p>
+                  </div>
+
+                  {/* Choose Mansion (optional) */}
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-white">
+                      Choose Mansion
                     </label>
                     <select
                       name="mansion"
                       value={formData.mansion}
                       onChange={handleInputChange}
-                      required
                       className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
                     >
                       <option value="">Select</option>
@@ -160,7 +226,25 @@ const ContactForm: React.FC = () => {
                       <option value="Ultimate Utopia Mansion">Ultimate Utopia Mansion</option>
                     </select>
                   </div>
+                </div>
 
+                {/* Next Button */}
+                <div className="flex justify-center">
+                  <button
+                    type="submit"
+                    onClick={handleNextPage}
+                    className="px-6 py-2 bg-[#C19B77] text-white font-semibold rounded-md hover:bg-[#b08968] transition"
+                  >
+                    Check Availability
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Page 2: Personal Information */}
+            {currentPage === 2 && (
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {/* Full Name */}
                   <div className="space-y-2">
                     <label className="block text-sm font-medium text-white">
@@ -207,73 +291,6 @@ const ContactForm: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Next Button */}
-                <div className="flex justify-center">
-                  <button
-                    type="submit"
-                    onClick={handleNextPage}
-                    className="px-6 py-2 bg-[#C19B77] text-white font-semibold rounded-md hover:bg-[#b08968] transition"
-                  >
-                    Check Availability
-                  </button>
-                </div>
-              </div>
-            )}
-
-            {/* Page 2 */}
-            {currentPage === 2 && (
-              <div className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-white">
-                      Check-in Date <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="date"
-                      name="checkInDate"
-                      value={formData.checkInDate}
-                      onChange={handleInputChange}
-                      required
-                      max={formData.checkOutDate || undefined}
-                      className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-white">
-                      Check-out Date <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="date"
-                      name="checkOutDate"
-                      value={formData.checkOutDate}
-                      onChange={handleInputChange}
-                      required
-                      min={formData.checkInDate || undefined}
-                      className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-white">
-                      Guests <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="number"
-                      name="guests"
-                      min="1"
-                      max="100"
-                      value={formData.guests}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-3 py-2 border border-gray-500 rounded-md bg-white text-[#373737] focus:outline-none focus:ring-[#C19B77] focus:border-[#C19B77]"
-                    />
-                    <p className="text-xs text-white">
-                      Please enter a number between <strong>1</strong> and <strong>100</strong>.
-                    </p>
-                  </div>
-                </div>
-
                 {/* Math Captcha */}
                 <MathCaptcha onValidate={setIsCaptchaValid} labelColor="text-white" />
 
@@ -307,3 +324,4 @@ const ContactForm: React.FC = () => {
 };
 
 export default ContactForm;
+

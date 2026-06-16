@@ -187,7 +187,7 @@ export default function MansionsPage() {
                                         View Details
                                     </Link>
                                     <Link
-                                        href="/contact-us"
+                                        href={`/#inquiry-form?mansion=${encodeURIComponent(mansion.heading)}`}
                                         className="bg-[#373737] text-white px-4 py-2 rounded hover:bg-[#4a4a4a] transition"
                                     >
                                         Book Now

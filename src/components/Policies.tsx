@@ -5,6 +5,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import CounterSection from "./Counter";
 
 export default function PoliciesSection() {
@@ -31,12 +32,12 @@ export default function PoliciesSection() {
       <div className="relative max-w-7xl mx-auto px-4 xl:px-12 flex-none xl:flex gap-6 items-center">
         {/* Left Side */}
         <div className="w-full py-6 xl:py-0 xl:w-[400px] flex items-center">
-          <a
-            href="/contact-us"
+          <Link
+            href="/#inquiry-form"
             className="inline-block text-xs bg-[#C19B77] text-white px-6 py-3 font-semibold tracking-widest"
           >
             BOOK NOW
-          </a>
+          </Link>
         </div>
 
         {/* Right Side → Swiper Carousel */}

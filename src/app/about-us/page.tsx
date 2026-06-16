@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import React from 'react'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
+import Link from 'next/link'
 import { mansions } from '@/data/mansion'
 import type { Metadata } from 'next'
 
@@ -76,12 +77,12 @@ function About() {
 
                         {/* Button */}
                         <div>
-                            <a
-                                href="/contact-us"
+                            <Link
+                                href="/#inquiry-form"
                                 className="inline-block bg-[#c19b77] hover:bg-[#b08968] text-white font-semibold text-sm px-8 py-3  shadow-md transition-transform duration-300 hover:scale-105"
                             >
                                 BOOK NOW
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -233,12 +234,12 @@ function About() {
                                 From luxury living, fine food, entertainment and transportation; to providing conferencing facilities, meeting rooms, partying facilities and special event locations, we work tirelessly to visualize, organize and achieve the best total solutions possible—all within the best possible cost, along with our sister company, Total Vegas Solution (TVS). We are not just aiming to meet customer demands; we are here to visualize and provide what the customers love, and to think of countless other ways to provide only the best customer experience in this unique Vegas platform.
                             </p>
 
-                            <a
-                                href="/contact-us"
+                            <Link
+                                href="/#inquiry-form"
                                 className="inline-block bg-[#C19B77] text-white font-bold py-3 px-8 text-sm"
                             >
                                 BOOK NOW
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>

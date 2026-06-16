@@ -60,7 +60,7 @@ const BookMansionSection: React.FC = () => {
           {/* Right Column - Button */}
           <div className="flex justify-center md:justify-end mt-4 md:mt-0">
             <Link
-              href={{ pathname: "/contact-us" }}
+              href="/#inquiry-form"
               className="inline-block bg-white text-[#b2855b] text-xl font-medium px-8 py-3 rounded-md transition-all duration-300 hover:scale-105 hover:bg-[#373737]"
               style={{
                 letterSpacing: "0.8px",
