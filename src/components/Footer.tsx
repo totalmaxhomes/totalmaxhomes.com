@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -109,17 +109,12 @@ export default function Footer() {
                                 </a>
                             </div>
                             <div className="border p-2 bg-[#C19B77] border-[#C19B77]">
-                                <a href="https://twitter.com/totalmaxhomes" target="_blank" className="hover:text-sky-400">
-                                    <Twitter size={22} />
-                                </a>
-                            </div>
-                            <div className="border p-2 bg-[#C19B77] border-[#C19B77]">
                                 <a href="https://www.instagram.com/totalmaxhomes/" target="_blank" className="hover:text-pink-500">
                                     <Instagram size={22} />
                                 </a>
                             </div>
                             <div className="border p-2 bg-[#C19B77] border-[#C19B77]">
-                                <a href="https://www.linkedin.com/company/104027744/admin/feed/posts/" target="_blank" className="hover:text-blue-400">
+                                <a href="https://www.linkedin.com/company/total-max-homes/?viewAsMember=true" target="_blank" className="hover:text-blue-400">
                                     <Linkedin size={22} />
                                 </a>
                             </div>
