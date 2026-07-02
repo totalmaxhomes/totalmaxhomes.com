@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Route } from "next"; // ✅ Import Route for type-safe internal links
@@ -47,18 +47,22 @@ const isExternal = (url: string) => /^https?:\/\//.test(url);
 
 export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    el.classList.remove("-translate-y-3", "opacity-0");
+    el.classList.add("translate-y-0", "opacity-100");
+  }, []);
 
   return (
     <>
       {/* 🔹 Navbar Section */}
       <section
+        ref={sectionRef}
         aria-label="Top header"
-        className={`md:sticky md:top-0 md:z-50 ${
-          mounted ? "translate-y-0 opacity-100" : "-translate-y-3 opacity-0"
-        } transition-all duration-600`}
+        className="md:sticky md:top-0 md:z-50 -translate-y-3 opacity-0 transition-all duration-600"
         style={{ transitionTimingFunction: "cubic-bezier(.2,.9,.3,1)" }}
       >
         <div

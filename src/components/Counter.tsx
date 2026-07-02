@@ -10,7 +10,6 @@ interface CounterProps {
 export const Counter = ({ title, value, suffix = "" }: CounterProps) => {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-  const [hasCompleted, setHasCompleted] = useState(false);
   const counterRef = useRef<HTMLDivElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -39,13 +38,10 @@ export const Counter = ({ title, value, suffix = "" }: CounterProps) => {
   }, []);
 
   useEffect(() => {
-    if (!isVisible || hasCompleted) return;
-    
+    if (!isVisible) return;
+
     const end = parseInt(value);
-    if (count >= end) {
-      setHasCompleted(true);
-      return;
-    }
+    if (count >= end) return;
 
     // const remainingSteps = end - count; // Not needed for current logic
     const duration = 500; // 2 seconds total
@@ -55,7 +51,6 @@ export const Counter = ({ title, value, suffix = "" }: CounterProps) => {
       setCount((prevCount) => {
         const nextCount = prevCount + 1;
         if (nextCount >= end) {
-          setHasCompleted(true);
           if (timerRef.current) {
             clearInterval(timerRef.current);
             timerRef.current = null;
@@ -72,7 +67,7 @@ export const Counter = ({ title, value, suffix = "" }: CounterProps) => {
         timerRef.current = null;
       }
     };
-  }, [value, isVisible, count, hasCompleted]);
+  }, [value, isVisible, count]);
 
   return (
     <div ref={counterRef} className="flex flex-col items-center justify-center text-center">

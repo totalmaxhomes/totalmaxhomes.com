@@ -41,7 +41,12 @@ declare const google: {
 export default function TranslationWidget() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState("en");
+  const [currentLang, setCurrentLang] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("selectedLanguage") || "en";
+    }
+    return "en";
+  });
   const [isReady, setIsReady] = useState(false);
 useEffect(() => {
   const interval = setInterval(() => {
@@ -60,8 +65,6 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, []);
   useEffect(() => {
-    const saved = localStorage.getItem("selectedLanguage") || "en";
-    setCurrentLang(saved);
 
     // ✅ Define callback before script loads
     window.googleTranslateElementInit = () => {
@@ -76,7 +79,7 @@ useEffect(() => {
       setIsReady(true);
 
       // Restore language
-      setTimeout(() => triggerLanguage(saved), 1000);
+      setTimeout(() => triggerLanguage(currentLang), 1000);
     };
 
     // ✅ Inject script if not exists

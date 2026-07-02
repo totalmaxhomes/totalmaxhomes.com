@@ -11,28 +11,24 @@ const ContactForm: React.FC = () => {
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const [formData, setFormData] = useState({
-    mansion: '',
-    fullName: '',
-    email: '',
-    phone: '',
-    checkInDate: '',
-    checkOutDate: '',
-    guests: ''
-  });
-
-  useEffect(() => {
-    // Read mansion query parameter on mount
+  const [formData, setFormData] = useState(() => {
+    const initial = {
+      mansion: '',
+      fullName: '',
+      email: '',
+      phone: '',
+      checkInDate: '',
+      checkOutDate: '',
+      guests: ''
+    };
     if (typeof window !== 'undefined') {
       const initialMansion = getInitialMansion(window.location.search);
       if (initialMansion) {
-        setFormData(prev => ({
-          ...prev,
-          mansion: initialMansion
-        }));
+        initial.mansion = initialMansion;
       }
     }
-  }, []);
+    return initial;
+  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
