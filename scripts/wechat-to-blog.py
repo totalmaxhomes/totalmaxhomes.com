@@ -71,6 +71,17 @@ def download_image(img_url: str, filename: str) -> str:
     return img_url  # fallback to external URL
 
 
+def img_extension(img_url: str) -> str:
+    """Infer image extension from WeChat URL."""
+    if "wx_fmt=png" in img_url or "mmbiz_png" in img_url:
+        return "png"
+    if "wx_fmt=webp" in img_url or "tp=webp" in img_url:
+        return "webp"
+    if "wx_fmt=gif" in img_url or "mmbiz_gif" in img_url:
+        return "gif"
+    return "jpg"
+
+
 def clean_img_url(raw: str) -> str:
     """Strip WeChat tracking params, keep base URL."""
     url = raw.split("#imgIndex")[0]
@@ -236,20 +247,31 @@ def main():
     slug = to_slug(data["title"])
     print(f"🔗  Slug   : {slug}")
 
-    # download featured image (first content image)
-    featured_local = data["all_imgs"][0] if data["all_imgs"] else "/Blog.jpg"
+    # download all content images locally and build remote → local mapping
+    img_map: dict[str, str] = {}
     if data["all_imgs"]:
-        ext = "jpg" if "jpeg" in data["all_imgs"][0] or "jpg" in data["all_imgs"][0] else "png"
-        img_filename = f"{slug}.{ext}"
-        print(f"\n⬇️   Downloading featured image...")
-        featured_local = download_image(data["all_imgs"][0], img_filename)
+        print(f"\n⬇️   Downloading {len(data['all_imgs'])} images...")
+        for idx, img_url in enumerate(data["all_imgs"]):
+            ext = img_extension(img_url)
+            # first image keeps the original featured filename
+            img_filename = f"{slug}.{ext}" if idx == 0 else f"{slug}-{idx}.{ext}"
+            local_path = download_image(img_url, img_filename)
+            img_map[img_url] = local_path
+
+    featured_local = img_map.get(data["all_imgs"][0], "/Blog.jpg") if data["all_imgs"] else "/Blog.jpg"
+
+    # replace remote image URLs in body with local paths
+    body_local = data["body"]
+    for remote, local in img_map.items():
+        body_local = body_local.replace(remote, local)
 
     # auto excerpt: first 180 chars of body text
-    plain = re.sub(r"\n+", " ", data["body"])
+    plain = re.sub(r"\n+", " ", body_local)
     plain = re.sub(r"!\[.*?\]\(.*?\)", "", plain)
     plain = re.sub(r"#+\s*", "", plain)
     excerpt = plain.strip()[:180].rstrip(",. ") + "."
 
+    data["body"] = body_local
     md = build_markdown(data, slug, featured_local, excerpt)
 
     out_path = os.path.join(BLOG_DIR, f"{slug}.md")

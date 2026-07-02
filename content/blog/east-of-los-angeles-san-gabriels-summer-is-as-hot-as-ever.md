@@ -6,7 +6,7 @@ featuredImage: "/east-of-los-angeles-san-gabriels-summer-is-as-hot-as-ever.jpg"
 featuredImageAlt: "East of Los Angeles, San Gabriel's Summer Is as Hot as Ever"
 ---
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/zDP7QPgHQjTKQdQQFhrKibRgmgzEkUERvPCMsHMaibIhbH0R3Tj5qGicT6D6yd2cQibVdtItpOoSRhDQf0kiaSkkuibHPcGY5x9eRLOgGU9W75wTM/640?wx_fmt=jpeg&amp;from=appmsg)
+![Image](/east-of-los-angeles-san-gabriels-summer-is-as-hot-as-ever.jpg)
 
 East of Los Angeles, San Gabriel's summer was as warm and vibrant as ever.
 
@@ -16,7 +16,7 @@ This was the Jade Promenade promotion for Las Vegas Chinatown, hosted by Wu Yuzh
 
 Lin Maosheng, President of the U.S. Zhejiang General Chamber of Commerce; Qin Yaling (Cathy), President of the Asian American Entrepreneurs Alliance (AAEA, Las Vegas); and Sun Xiaohua (Johnson Sun / Master of Taihu), President of the North American International Academy of Painting and Calligraphy , along with many old friends, made the trip to show their support. Wu Yuzhang (Gary the Texan Wu) also extended his sincere appreciation to every guest who attended the event.
 
-![Image](https://mmbiz.qpic.cn/mmbiz_jpg/zDP7QPgHQjR4ZDibPiagwqcicGF2pPMUFIU1tnuHFxMADKMTguSH4khNUFGzSj4TxwupfO26NuaAgdpqg1R6iaJ0WmTRMPohpeThTCNibRFlJnWY/640?wx_fmt=jpeg&amp;from=appmsg)
+![Image](/east-of-los-angeles-san-gabriels-summer-is-as-hot-as-ever-1.jpg)
 
 What Is Jade Promenade?
 
@@ -24,7 +24,7 @@ On site, Gary the Texan Wu gave a detailed presentation of the project's master 
 
 In simple terms, the goal is to provide the Chinese community in Las Vegas with a truly high-quality commercial destination of its own. Chinatown is already a vibrant and thriving area, but it still lacks a defining commercial landmark. Jade Promenade aims to fill that gap.
 
-![Image](https://mmbiz.qpic.cn/mmbiz_jpg/zDP7QPgHQjRbaE6gVFAZwA3PXbSdVcWNM5jQetf6HAWlyN5c7M181CrLRKu6slMkiciboJlMv8hRdh9eSMv4xKyZPxWfb4hObYS4lUd8kXv7M/640?wx_fmt=jpeg&amp;from=appmsg)
+![Image](/east-of-los-angeles-san-gabriels-summer-is-as-hot-as-ever-2.jpg)
 
 At the Promotion
 
@@ -46,7 +46,7 @@ During the event, representatives from several chambers of commerce and business
 
 Sarah Sorrells noted that Las Vegas has experienced sustained population growth in recent years, while its tourism and service sectors remain vibrant. At the same time, the Chinatown business district continues to expand and evolve. The Jade Promenade project aims to bring together high-quality brands and commercial resources, creating new opportunities for businesses while further enriching the local commercial landscape and enhancing the vitality of the community.
 
-![Image](https://mmbiz.qpic.cn/mmbiz_jpg/zDP7QPgHQjQSicESse39WiasQcGb4vavEx77rr8qbic6PWh5VnkhaIFlrUOuagKCBXC3HmqxyubEhzABRaEr6Dt9GBIvUxr5eBCsJxlKO5sAkg/640?wx_fmt=jpeg&amp;from=appmsg)
+![Image](/east-of-los-angeles-san-gabriels-summer-is-as-hot-as-ever-3.jpg)
 
 More Than Leasing — A Connection
 
@@ -56,7 +56,7 @@ For TotalMax Homes, this marks an expansion of its commercial footprint. For the
 
 While 2027 may seem some distance away, for a commercial project, the timeline for leasing and operational preparation is already well underway. Jade Promenade is now in its "NOW LEASING" phase, with merchants actively exploring tenancy opportunities. If you're a dining brand, retail brand, entertainment venture, or investor planning to enter the Vegas market, this is worth paying attention to.
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/zDP7QPgHQjR4U4HtQAJpKp5ZiansbEQ5yic2CMy9VW1pYoERb59y0px5JTJiczzwhv9NxOkeLlgA4La0884Al2JyKmUzLAZiakFxsibBHurMEhCU/640?wx_fmt=jpeg&amp;from=appmsg)
+![Image](/east-of-los-angeles-san-gabriels-summer-is-as-hot-as-ever-4.jpg)
 
 As for us, we'll continue doing what we do best with our mansions: making sure every guest who comes to Las Vegas enjoys a comfortable stay and a memorable experience.
 
@@ -64,7 +64,7 @@ But the next time you check into one of our mansions, whether you're relaxing by
 
 And that will be one more reason to visit Las Vegas.
 
-![Image](https://mmbiz.qpic.cn/mmbiz_jpg/zDP7QPgHQjQibJ3O9pQwjNL1sXnQZO1VtO7dDPdVtCu3ugVWallvf4TLHbyosdQIXh9hcnt8cz1NHLjtUNOkXxaCtkBicAiauc7SofgIKNhjA0/640?wx_fmt=jpeg)
+![Image](/east-of-los-angeles-san-gabriels-summer-is-as-hot-as-ever-5.jpg)
 
 Jade Promenade Leasing Inquiries
 
@@ -90,7 +90,7 @@ How to Find the Perfect Vacation Mansion? TotalMax Homes Reveals All
 
 September in Las Vegas: 3 Music Festivals + 6 Mansions for the Ultimate Journey
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/khib04nVuMcWS5UGIGQWrleNDIDVaD9SxBw2pqIS6W2dgJb8FRnzv3aqmqdiclC5ZPBdVJdHR8a0ia9MnibIl7e0NQ/640?wx_fmt=png&amp;from=appmsg&amp;wxfrom=5&amp;wx_lazy=1&amp;retryload=1&amp;tp=webp)
+![Image](/east-of-los-angeles-san-gabriels-summer-is-as-hot-as-ever-6.png)
 
 Book now, and begin your own evening in paradise
 

@@ -6,13 +6,13 @@ featuredImage: "/vegas-is-not-just-for-the-night-cosmoprof-and-the-citys-global-
 featuredImageAlt: "Vegas Is Not Just for the Night: Cosmoprof and the City’s Global Business Arena"
 ---
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/zDP7QPgHQjSKx4IOgBTP13jez2ibxsVE1v8knmEGqCL4EA5IKVmJtcWqUhNFCITVdDdfpZiczH8iaibvD9siayH8Lh1h9daOwFDbiacyenguBhM3Q/640?wx_fmt=png&amp;from=appmsg)
+![Image](/vegas-is-not-just-for-the-night-cosmoprof-and-the-citys-global-business-arena.png)
 
 Las Vegas, a city people always want to return to.
 
 Some come to Las Vegas for its dazzling nightlife. thers fly in for a performance or a Michelin-starred dinner. But for professionals in the beauty industry, every July brings another reason to visit: Cosmoprof North America .
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/zDP7QPgHQjRHbibhTSES21mXSVJnVofbzbJU7SqgWib8fVlyUgvG10JZQSZBaVaPIx4jV6OT5McH4Ko77oOZ51KdF7a0ic3eajfoMSenpgiahnU/640?wx_fmt=png&amp;from=appmsg)
+![Image](/vegas-is-not-just-for-the-night-cosmoprof-and-the-citys-global-business-arena-1.png)
 
 Cosmoprof North America Las Vegas 2026, the annual gathering of the beauty industry in the Americas
 
@@ -24,7 +24,7 @@ This year's highlights are especially noteworthy. The K-Beauty zone continues to
 
 In simple terms, if you're in the beauty industry and you're not here during these three days, there's a good chance your competitors will be.
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/zDP7QPgHQjRIQqFdYmwFxM8KC5Vx9hdZqhdaMVlS336DibJcKfaE3vHvwxmSS7NbYt8YuVxibUhe0nmXTEibsOYmSBrEE56WdqMs5EcaJib9krY/640?wx_fmt=png&amp;from=appmsg)
+![Image](/vegas-is-not-just-for-the-night-cosmoprof-and-the-citys-global-business-arena-2.png)
 
 But the exhibition is only part of the story. Where you stay at night shapes the quality of the entire experience.
 
@@ -32,7 +32,7 @@ Inside the halls of Mandalay Bay, the lights are bright, the crowds are constant
 
 Las Hawaii Mansions, a collection of seven private mansions, offers exactly that.
 
-![Image](https://mmbiz.qpic.cn/mmbiz_png/zDP7QPgHQjSYNDwpMErVT8UoAC9jOtXh1J72tc8QmArhxJgxicOMpCkvHoRpJn6wm5cJxEjwxKKaGiawdzV81SMACRGicWPhYFUDJAmwFOibQPg/640?wx_fmt=png&amp;from=appmsg)
+![Image](/vegas-is-not-just-for-the-night-cosmoprof-and-the-citys-global-business-arena-3.png)
 
 C&C Celestial Club Mansion | The “charging station” for exhibition teams
 
@@ -84,7 +84,7 @@ For booking inquiries, please DM us or contact your dedicated account manager.
 
 拉斯维加斯九月：三大音乐节 + 六座豪宅，打造终极之旅
 
-![Image](https://mmbiz.qpic.cn/sz_mmbiz_png/khib04nVuMcWS5UGIGQWrleNDIDVaD9SxBw2pqIS6W2dgJb8FRnzv3aqmqdiclC5ZPBdVJdHR8a0ia9MnibIl7e0NQ/640?wx_fmt=png&amp;from=appmsg&amp;wxfrom=5&amp;wx_lazy=1&amp;retryload=1&amp;tp=webp)
+![Image](/vegas-is-not-just-for-the-night-cosmoprof-and-the-citys-global-business-arena-4.png)
 
 立即预订，开启您的天堂之夜！
 
