@@ -50,6 +50,11 @@ def parse_chinese_date(raw: str) -> str:
     if m:
         y, mo, d = m.groups()
         return f"{y}-{mo.zfill(2)}-{d.zfill(2)}"
+    # '2026-07-02 23:31'  →  '2026-07-02'
+    m = re.search(r"(\d{4})-(\d{1,2})-(\d{1,2})", raw)
+    if m:
+        y, mo, d = m.groups()
+        return f"{y}-{mo.zfill(2)}-{d.zfill(2)}"
     # fallback: today
     return datetime.today().strftime("%Y-%m-%d")
 
@@ -111,6 +116,11 @@ def parse_wechat(html: str) -> dict:
     m = re.search(r'id="publish_time"[^>]*>(.*?)</em>', html, re.DOTALL)
     if m:
         date_raw = m.group(1).strip()
+    if not date_raw:
+        # fallback: JS var  createTime = '2026-07-02 23:31';
+        m2 = re.search(r"createTime\s*=\s*'([^']+)'", html)
+        if m2:
+            date_raw = m2.group(1).strip()
     date = parse_chinese_date(date_raw) if date_raw else datetime.today().strftime("%Y-%m-%d")
 
     # content block
