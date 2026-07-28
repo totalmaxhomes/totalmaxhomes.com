@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import Plunk from '@plunk/node';
+import { Resend } from 'resend';
 
 export async function POST(request: NextRequest) {
   try {
@@ -9,9 +9,9 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    const plunkApiKey = process.env.PLUNK_API_KEY;
-    if (!plunkApiKey) {
-      return NextResponse.json({ error: 'Plunk API key not configured' }, { status: 500 });
+    const resendApiKey = process.env.RESEND_API_KEY;
+    if (!resendApiKey) {
+      return NextResponse.json({ error: 'Resend API key not configured' }, { status: 500 });
     }
 
     const emailBody = `
@@ -25,12 +25,14 @@ export async function POST(request: NextRequest) {
       <p><strong>Guests:</strong> ${guests}</p>
     `;
 
-    const plunk = new Plunk(plunkApiKey);
+    const resend = new Resend(resendApiKey);
 
-    await plunk.emails.send({
-      to: 'inquiry@totalmaxhomes.com', // Replace with actual admin email
+    await resend.emails.send({
+      from: 'inquiry@totalmaxhomes.com',
+      to: 'inquiry@totalmaxhomes.com',
+      replyTo: email,
       subject: 'New Inquiry from Website',
-      body: emailBody
+      html: emailBody,
     });
 
     return NextResponse.json({ success: true });
