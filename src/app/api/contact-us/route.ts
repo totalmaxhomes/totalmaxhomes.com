@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import Plunk from '@plunk/node';
+import { Resend } from 'resend';
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,19 +13,20 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    const plunkApiKey = process.env.PLUNK_API_KEY;
-    if (!plunkApiKey) {
-      return NextResponse.json({ error: 'Plunk API key not configured' }, { status: 500 });
+    const resendApiKey = process.env.RESEND_API_KEY;
+    if (!resendApiKey) {
+      return NextResponse.json({ error: 'Resend API key not configured' }, { status: 500 });
     }
 
-    const plunk = new Plunk(plunkApiKey);
+    const resend = new Resend(resendApiKey);
 
     // Send email to admin
-    await plunk.emails.send({
+    await resend.emails.send({
       from: 'inquiry@totalmaxhomes.com',
-      to: 'inquiry@totalmaxhomes.com', // Replace with actual admin email
+      to: 'inquiry@totalmaxhomes.com',
+      replyTo: email,
       subject: 'New Contact Form Submission',
-      body: `
+      html: `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
@@ -35,11 +36,11 @@ export async function POST(request: NextRequest) {
     });
 
     // Send confirmation email to user
-    await plunk.emails.send({
+    await resend.emails.send({
       from: 'inquiry@totalmaxhomes.com',
       to: email,
       subject: 'Thank you for contacting TotalMax Homes',
-      body: `
+      html: `
         <h2>Thank you for reaching out!</h2>
         <p>Dear ${name},</p>
         <p>We have received your message and will get back to you soon.</p>
